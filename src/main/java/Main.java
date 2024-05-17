@@ -22,9 +22,9 @@ public class Main {
         configuration.setClassForTemplateLoading(Main.class, "/templates");
         freeMarker.setConfiguration(configuration);
 
-//        get("/", ReservaController::servirIndice, freeMarker);
+        get("/", ReservaController::servirIndice, freeMarker);
 //        get("/lista-notas", NotaController::servirLista, freeMarker);
-//        get("/nota/:id", NotaController::servirNota, freeMarker);
+        get("/nota/:id", ReservaController::servirReserva, freeMarker);
 //        get("/crea-nota", NotaController::servirCrearNota, freeMarker);
 //        post("/crea-nota", NotaController::crearNota, freeMarker);
 //        get("/edita-nota/:id", NotaController::servirEditarNota, freeMarker);
