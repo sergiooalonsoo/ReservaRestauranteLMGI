@@ -35,5 +35,21 @@ public class ReservaController {
         return new ModelAndView(model, "lista-mesas.ftl");
     }
 
+    public static ModelAndView servirReserva(Request request, Response response) {
+        Map<String, Object> model = new HashMap<>();
+
+        long idReserva = Long.parseLong(request.params(":id"));
+        Reserva reserva = reservaService.obtenerReserva(idReserva);
+
+        // COnsultar BD usuario con ese ID
+//        System.out.println("SELECT LOCAL BD");
+//        Local local = new Local(idLocal, "nombre", "descripcion", 89);
+
+        model.put("eliminar", false);
+        model.put("local", reserva);
+
+        return new ModelAndView(model, "reserva.ftl");
+    }
+
 }
 

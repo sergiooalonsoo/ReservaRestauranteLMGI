@@ -7,7 +7,6 @@ public class ReservaService {
 
     private ReservaDao reservaDao;
     public Reserva obtenerReserva(long idReserva) {
-            return reservaDao.obtenerLocal(idReserva);
-
+            return reservaDao.obtenerReserva(idReserva);
     }
 }
