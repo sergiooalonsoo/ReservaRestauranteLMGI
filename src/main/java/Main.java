@@ -27,9 +27,7 @@ public class Main {
         get("/nota/:id", ReservaController::servirReserva, freeMarker);
         get("/crea-reserva", ReservaController::servirCrearReserva, freeMarker);
         post("/crea-reserva", ReservaController::crearReserva, freeMarker);
-//        get("/edita-nota/:id", NotaController::servirEditarNota, freeMarker);
-//        post("/edita-nota/:id", NotaController::editarNota, freeMarker);
-//        get("/elimina-nota/:id", NotaController::servirEliminarNota, freeMarker);
+        get("/elimina-reserva/:id", ReservaController::servirEliminarReseva, freeMarker);
 //        post("/elimina-nota/:id", NotaController::eliminarNota, freeMarker);
 //        get("/error", NotaController::servirError, freeMarker);
 //

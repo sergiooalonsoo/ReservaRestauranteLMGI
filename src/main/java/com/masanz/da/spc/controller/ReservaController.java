@@ -24,14 +24,10 @@ public class ReservaController {
 
     public static ModelAndView servirLista(Request request, Response response) {
         Map<String, Object> model = new HashMap<>();
-        List<Reserva> listaReservas =new ArrayList<>();
-        listaReservas.add(new Reserva(1,"javier","CENA",4,"21-'03-2024",452));
-        listaReservas.add(new Reserva(2,"Sergio","COMIDA",6,"24-'03-2024",452));
-        listaReservas.add(new Reserva(3,"Simon","CENA",2,"21-'03-2024",452));
-        listaReservas.add(new Reserva(4,"Robert","COMIDA",13,"21-'03-2024",452));
+//
 
-//        List<Reserva> listaMesas = reservaService.obtenerResrvas();
-       model.put("reservas", listaReservas);
+        List<Reserva> listaReservas = reservaService.obtenerReservas();
+        model.put("reservas", listaReservas);
         return new ModelAndView(model, "lista-reservas.ftl");
     }
 
@@ -85,6 +81,16 @@ public class ReservaController {
 //            response.redirect("/error");
 //        }
 //        return null;
+    }
+
+    public static ModelAndView servirEliminarReseva(Request request, Response response) {
+        int idReserva = Integer.parseInt(request.params(":id"));
+        if (reservaService.eliminarReserva(idReserva)) {
+            response.redirect("/lista-reservas");
+        }else {
+            response.redirect("/error");
+        }
+        return null;
     }
 }
 

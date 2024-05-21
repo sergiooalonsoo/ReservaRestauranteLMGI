@@ -341,3 +341,146 @@ java.lang.NumberFormatException: Cannot parse null string
 	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:806) [jetty-util-9.4.31.v20200723.jar:9.4.31.v20200723]
 	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:938) [jetty-util-9.4.31.v20200723.jar:9.4.31.v20200723]
 	at java.lang.Thread.run(Thread.java:833) [?:?]
+09:49:46.101 [main] INFO  Main - ARRANCANDO APLICACION
+09:49:46.140 [main] INFO  spark.staticfiles.StaticFilesConfiguration - StaticResourceHandler configured with folder = /public
+09:49:46.339 [Thread-0] INFO  org.eclipse.jetty.util.log - Logging initialized @2140ms to org.eclipse.jetty.util.log.Slf4jLog
+09:49:46.424 [Thread-0] INFO  spark.embeddedserver.jetty.EmbeddedJettyServer - == Spark has ignited ...
+09:49:46.424 [Thread-0] INFO  spark.embeddedserver.jetty.EmbeddedJettyServer - >> Listening on 0.0.0.0:4567
+09:49:46.428 [Thread-0] INFO  org.eclipse.jetty.server.Server - jetty-9.4.31.v20200723; built: 2020-07-23T17:57:36.812Z; git: 450ba27947e13e66baa8cd1ce7e85a4461cacc1d; jvm 17+35-2724
+09:49:46.466 [Thread-0] INFO  org.eclipse.jetty.server.session - DefaultSessionIdManager workerName=node0
+09:49:46.467 [Thread-0] INFO  org.eclipse.jetty.server.session - No SessionScavenger set, using defaults
+09:49:46.471 [Thread-0] INFO  org.eclipse.jetty.server.session - node0 Scavenging every 660000ms
+09:49:46.608 [Thread-0] INFO  org.eclipse.jetty.server.AbstractConnector - Started ServerConnector@2398ffcd{HTTP/1.1, (http/1.1)}{0.0.0.0:4567}
+09:49:46.608 [Thread-0] INFO  org.eclipse.jetty.server.Server - Started @2413ms
+09:49:50.665 [main] INFO  Main - ARRANCANDO APLICACION
+09:49:50.699 [main] INFO  spark.staticfiles.StaticFilesConfiguration - StaticResourceHandler configured with folder = /public
+09:49:50.883 [Thread-0] INFO  org.eclipse.jetty.util.log - Logging initialized @1246ms to org.eclipse.jetty.util.log.Slf4jLog
+09:49:50.950 [Thread-0] INFO  spark.embeddedserver.jetty.EmbeddedJettyServer - == Spark has ignited ...
+09:49:50.951 [Thread-0] INFO  spark.embeddedserver.jetty.EmbeddedJettyServer - >> Listening on 0.0.0.0:4567
+09:49:50.954 [Thread-0] INFO  org.eclipse.jetty.server.Server - jetty-9.4.31.v20200723; built: 2020-07-23T17:57:36.812Z; git: 450ba27947e13e66baa8cd1ce7e85a4461cacc1d; jvm 17+35-2724
+09:49:50.984 [Thread-0] INFO  org.eclipse.jetty.server.session - DefaultSessionIdManager workerName=node0
+09:49:50.984 [Thread-0] INFO  org.eclipse.jetty.server.session - No SessionScavenger set, using defaults
+09:49:50.987 [Thread-0] INFO  org.eclipse.jetty.server.session - node0 Scavenging every 600000ms
+09:49:50.993 [Thread-0] ERROR spark.Spark - ignite failed
+java.io.IOException: Failed to bind to /0.0.0.0:4567
+	at org.eclipse.jetty.server.ServerConnector.openAcceptChannel(ServerConnector.java:349) ~[jetty-server-9.4.31.v20200723.jar:9.4.31.v20200723]
+	at org.eclipse.jetty.server.ServerConnector.open(ServerConnector.java:310) ~[jetty-server-9.4.31.v20200723.jar:9.4.31.v20200723]
+	at org.eclipse.jetty.server.AbstractNetworkConnector.doStart(AbstractNetworkConnector.java:80) ~[jetty-server-9.4.31.v20200723.jar:9.4.31.v20200723]
+	at org.eclipse.jetty.server.ServerConnector.doStart(ServerConnector.java:234) ~[jetty-server-9.4.31.v20200723.jar:9.4.31.v20200723]
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:72) ~[jetty-util-9.4.31.v20200723.jar:9.4.31.v20200723]
+	at org.eclipse.jetty.server.Server.doStart(Server.java:386) ~[jetty-server-9.4.31.v20200723.jar:9.4.31.v20200723]
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:72) ~[jetty-util-9.4.31.v20200723.jar:9.4.31.v20200723]
+	at spark.embeddedserver.jetty.EmbeddedJettyServer.ignite(EmbeddedJettyServer.java:149) ~[spark-core-2.9.3.jar:?]
+	at spark.Service.lambda$init$2(Service.java:632) ~[spark-core-2.9.3.jar:?]
+	at java.lang.Thread.run(Thread.java:833) [?:?]
+Caused by: java.net.BindException: Address already in use: bind
+	at sun.nio.ch.Net.bind0(Native Method) ~[?:?]
+	at sun.nio.ch.Net.bind(Net.java:555) ~[?:?]
+	at sun.nio.ch.ServerSocketChannelImpl.netBind(ServerSocketChannelImpl.java:337) ~[?:?]
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:294) ~[?:?]
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:89) ~[?:?]
+	at org.eclipse.jetty.server.ServerConnector.openAcceptChannel(ServerConnector.java:345) ~[jetty-server-9.4.31.v20200723.jar:9.4.31.v20200723]
+	... 9 more
+09:50:02.699 [main] INFO  Main - ARRANCANDO APLICACION
+09:50:02.730 [main] INFO  spark.staticfiles.StaticFilesConfiguration - StaticResourceHandler configured with folder = /public
+09:50:02.902 [Thread-0] INFO  org.eclipse.jetty.util.log - Logging initialized @952ms to org.eclipse.jetty.util.log.Slf4jLog
+09:50:02.991 [Thread-0] INFO  spark.embeddedserver.jetty.EmbeddedJettyServer - == Spark has ignited ...
+09:50:02.991 [Thread-0] INFO  spark.embeddedserver.jetty.EmbeddedJettyServer - >> Listening on 0.0.0.0:4567
+09:50:02.994 [Thread-0] INFO  org.eclipse.jetty.server.Server - jetty-9.4.31.v20200723; built: 2020-07-23T17:57:36.812Z; git: 450ba27947e13e66baa8cd1ce7e85a4461cacc1d; jvm 17+35-2724
+09:50:03.026 [Thread-0] INFO  org.eclipse.jetty.server.session - DefaultSessionIdManager workerName=node0
+09:50:03.026 [Thread-0] INFO  org.eclipse.jetty.server.session - No SessionScavenger set, using defaults
+09:50:03.029 [Thread-0] INFO  org.eclipse.jetty.server.session - node0 Scavenging every 600000ms
+09:50:03.117 [Thread-0] INFO  org.eclipse.jetty.server.AbstractConnector - Started ServerConnector@70788144{HTTP/1.1, (http/1.1)}{0.0.0.0:4567}
+09:50:03.117 [Thread-0] INFO  org.eclipse.jetty.server.Server - Started @1171ms
+09:57:32.693 [main] INFO  Main - ARRANCANDO APLICACION
+09:57:32.723 [main] INFO  spark.staticfiles.StaticFilesConfiguration - StaticResourceHandler configured with folder = /public
+09:57:32.860 [Thread-0] INFO  org.eclipse.jetty.util.log - Logging initialized @861ms to org.eclipse.jetty.util.log.Slf4jLog
+09:57:32.924 [Thread-0] INFO  spark.embeddedserver.jetty.EmbeddedJettyServer - == Spark has ignited ...
+09:57:32.925 [Thread-0] INFO  spark.embeddedserver.jetty.EmbeddedJettyServer - >> Listening on 0.0.0.0:4567
+09:57:32.928 [Thread-0] INFO  org.eclipse.jetty.server.Server - jetty-9.4.31.v20200723; built: 2020-07-23T17:57:36.812Z; git: 450ba27947e13e66baa8cd1ce7e85a4461cacc1d; jvm 17+35-2724
+09:57:32.959 [Thread-0] INFO  org.eclipse.jetty.server.session - DefaultSessionIdManager workerName=node0
+09:57:32.959 [Thread-0] INFO  org.eclipse.jetty.server.session - No SessionScavenger set, using defaults
+09:57:32.962 [Thread-0] INFO  org.eclipse.jetty.server.session - node0 Scavenging every 660000ms
+09:57:33.060 [Thread-0] INFO  org.eclipse.jetty.server.AbstractConnector - Started ServerConnector@4a5cd9aa{HTTP/1.1, (http/1.1)}{0.0.0.0:4567}
+09:57:33.060 [Thread-0] INFO  org.eclipse.jetty.server.Server - Started @1065ms
+09:57:37.017 [qtp1260508522-25] ERROR spark.http.matching.GeneralError - 
+java.lang.NullPointerException: Cannot invoke "com.masanz.da.spc.dao.ReservaDao.eliminarReserva(long)" because "this.reservaDao" is null
+	at com.masanz.da.spc.service.ReservaService.eliminarReserva(ReservaService.java:14) ~[classes/:?]
+	at com.masanz.da.spc.controller.ReservaController.servirEliminarReseva(ReservaController.java:92) ~[classes/:?]
+	at spark.TemplateViewRouteImpl$1.handle(TemplateViewRouteImpl.java:66) ~[spark-core-2.9.3.jar:?]
+	at spark.http.matching.Routes.execute(Routes.java:61) ~[spark-core-2.9.3.jar:?]
+	at spark.http.matching.MatcherFilter.doFilter(MatcherFilter.java:134) ~[spark-core-2.9.3.jar:?]
+	at spark.embeddedserver.jetty.JettyHandler.doHandle(JettyHandler.java:50) ~[spark-core-2.9.3.jar:?]
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1584) ~[jetty-server-9.4.31.v20200723.jar:9.4.31.v20200723]
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141) ~[jetty-server-9.4.31.v20200723.jar:9.4.31.v20200723]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127) ~[jetty-server-9.4.31.v20200723.jar:9.4.31.v20200723]
+	at org.eclipse.jetty.server.Server.handle(Server.java:501) ~[jetty-server-9.4.31.v20200723.jar:9.4.31.v20200723]
+	at org.eclipse.jetty.server.HttpChannel.lambda$handle$1(HttpChannel.java:383) ~[jetty-server-9.4.31.v20200723.jar:9.4.31.v20200723]
+	at org.eclipse.jetty.server.HttpChannel.dispatch(HttpChannel.java:556) [jetty-server-9.4.31.v20200723.jar:9.4.31.v20200723]
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:375) [jetty-server-9.4.31.v20200723.jar:9.4.31.v20200723]
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:273) [jetty-server-9.4.31.v20200723.jar:9.4.31.v20200723]
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:311) [jetty-io-9.4.31.v20200723.jar:9.4.31.v20200723]
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:105) [jetty-io-9.4.31.v20200723.jar:9.4.31.v20200723]
+	at org.eclipse.jetty.io.ChannelEndPoint$1.run(ChannelEndPoint.java:104) [jetty-io-9.4.31.v20200723.jar:9.4.31.v20200723]
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.runTask(EatWhatYouKill.java:336) [jetty-util-9.4.31.v20200723.jar:9.4.31.v20200723]
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:313) [jetty-util-9.4.31.v20200723.jar:9.4.31.v20200723]
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.tryProduce(EatWhatYouKill.java:171) [jetty-util-9.4.31.v20200723.jar:9.4.31.v20200723]
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.run(EatWhatYouKill.java:129) [jetty-util-9.4.31.v20200723.jar:9.4.31.v20200723]
+	at org.eclipse.jetty.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:375) [jetty-util-9.4.31.v20200723.jar:9.4.31.v20200723]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:806) [jetty-util-9.4.31.v20200723.jar:9.4.31.v20200723]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:938) [jetty-util-9.4.31.v20200723.jar:9.4.31.v20200723]
+	at java.lang.Thread.run(Thread.java:833) [?:?]
+09:57:38.756 [qtp1260508522-26] ERROR spark.http.matching.GeneralError - 
+java.lang.NullPointerException: Cannot invoke "com.masanz.da.spc.dao.ReservaDao.eliminarReserva(long)" because "this.reservaDao" is null
+	at com.masanz.da.spc.service.ReservaService.eliminarReserva(ReservaService.java:14) ~[classes/:?]
+	at com.masanz.da.spc.controller.ReservaController.servirEliminarReseva(ReservaController.java:92) ~[classes/:?]
+	at spark.TemplateViewRouteImpl$1.handle(TemplateViewRouteImpl.java:66) ~[spark-core-2.9.3.jar:?]
+	at spark.http.matching.Routes.execute(Routes.java:61) ~[spark-core-2.9.3.jar:?]
+	at spark.http.matching.MatcherFilter.doFilter(MatcherFilter.java:134) ~[spark-core-2.9.3.jar:?]
+	at spark.embeddedserver.jetty.JettyHandler.doHandle(JettyHandler.java:50) ~[spark-core-2.9.3.jar:?]
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1584) ~[jetty-server-9.4.31.v20200723.jar:9.4.31.v20200723]
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141) ~[jetty-server-9.4.31.v20200723.jar:9.4.31.v20200723]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127) ~[jetty-server-9.4.31.v20200723.jar:9.4.31.v20200723]
+	at org.eclipse.jetty.server.Server.handle(Server.java:501) ~[jetty-server-9.4.31.v20200723.jar:9.4.31.v20200723]
+	at org.eclipse.jetty.server.HttpChannel.lambda$handle$1(HttpChannel.java:383) ~[jetty-server-9.4.31.v20200723.jar:9.4.31.v20200723]
+	at org.eclipse.jetty.server.HttpChannel.dispatch(HttpChannel.java:556) [jetty-server-9.4.31.v20200723.jar:9.4.31.v20200723]
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:375) [jetty-server-9.4.31.v20200723.jar:9.4.31.v20200723]
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:273) [jetty-server-9.4.31.v20200723.jar:9.4.31.v20200723]
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:311) [jetty-io-9.4.31.v20200723.jar:9.4.31.v20200723]
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:105) [jetty-io-9.4.31.v20200723.jar:9.4.31.v20200723]
+	at org.eclipse.jetty.io.ChannelEndPoint$1.run(ChannelEndPoint.java:104) [jetty-io-9.4.31.v20200723.jar:9.4.31.v20200723]
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.runTask(EatWhatYouKill.java:336) [jetty-util-9.4.31.v20200723.jar:9.4.31.v20200723]
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:313) [jetty-util-9.4.31.v20200723.jar:9.4.31.v20200723]
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.tryProduce(EatWhatYouKill.java:171) [jetty-util-9.4.31.v20200723.jar:9.4.31.v20200723]
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.run(EatWhatYouKill.java:129) [jetty-util-9.4.31.v20200723.jar:9.4.31.v20200723]
+	at org.eclipse.jetty.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:375) [jetty-util-9.4.31.v20200723.jar:9.4.31.v20200723]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:806) [jetty-util-9.4.31.v20200723.jar:9.4.31.v20200723]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:938) [jetty-util-9.4.31.v20200723.jar:9.4.31.v20200723]
+	at java.lang.Thread.run(Thread.java:833) [?:?]
+09:57:38.915 [qtp1260508522-25] ERROR spark.http.matching.GeneralError - 
+java.lang.NullPointerException: Cannot invoke "com.masanz.da.spc.dao.ReservaDao.eliminarReserva(long)" because "this.reservaDao" is null
+	at com.masanz.da.spc.service.ReservaService.eliminarReserva(ReservaService.java:14) ~[classes/:?]
+	at com.masanz.da.spc.controller.ReservaController.servirEliminarReseva(ReservaController.java:92) ~[classes/:?]
+	at spark.TemplateViewRouteImpl$1.handle(TemplateViewRouteImpl.java:66) ~[spark-core-2.9.3.jar:?]
+	at spark.http.matching.Routes.execute(Routes.java:61) ~[spark-core-2.9.3.jar:?]
+	at spark.http.matching.MatcherFilter.doFilter(MatcherFilter.java:134) ~[spark-core-2.9.3.jar:?]
+	at spark.embeddedserver.jetty.JettyHandler.doHandle(JettyHandler.java:50) ~[spark-core-2.9.3.jar:?]
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1584) ~[jetty-server-9.4.31.v20200723.jar:9.4.31.v20200723]
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141) ~[jetty-server-9.4.31.v20200723.jar:9.4.31.v20200723]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127) ~[jetty-server-9.4.31.v20200723.jar:9.4.31.v20200723]
+	at org.eclipse.jetty.server.Server.handle(Server.java:501) ~[jetty-server-9.4.31.v20200723.jar:9.4.31.v20200723]
+	at org.eclipse.jetty.server.HttpChannel.lambda$handle$1(HttpChannel.java:383) ~[jetty-server-9.4.31.v20200723.jar:9.4.31.v20200723]
+	at org.eclipse.jetty.server.HttpChannel.dispatch(HttpChannel.java:556) [jetty-server-9.4.31.v20200723.jar:9.4.31.v20200723]
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:375) [jetty-server-9.4.31.v20200723.jar:9.4.31.v20200723]
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:273) [jetty-server-9.4.31.v20200723.jar:9.4.31.v20200723]
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:311) [jetty-io-9.4.31.v20200723.jar:9.4.31.v20200723]
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:105) [jetty-io-9.4.31.v20200723.jar:9.4.31.v20200723]
+	at org.eclipse.jetty.io.ChannelEndPoint$1.run(ChannelEndPoint.java:104) [jetty-io-9.4.31.v20200723.jar:9.4.31.v20200723]
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.runTask(EatWhatYouKill.java:336) [jetty-util-9.4.31.v20200723.jar:9.4.31.v20200723]
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:313) [jetty-util-9.4.31.v20200723.jar:9.4.31.v20200723]
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.tryProduce(EatWhatYouKill.java:171) [jetty-util-9.4.31.v20200723.jar:9.4.31.v20200723]
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.run(EatWhatYouKill.java:129) [jetty-util-9.4.31.v20200723.jar:9.4.31.v20200723]
+	at org.eclipse.jetty.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:375) [jetty-util-9.4.31.v20200723.jar:9.4.31.v20200723]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:806) [jetty-util-9.4.31.v20200723.jar:9.4.31.v20200723]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:938) [jetty-util-9.4.31.v20200723.jar:9.4.31.v20200723]
+	at java.lang.Thread.run(Thread.java:833) [?:?]

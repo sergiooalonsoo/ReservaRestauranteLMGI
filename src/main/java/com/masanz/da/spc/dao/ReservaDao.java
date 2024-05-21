@@ -29,4 +29,34 @@ public class ReservaDao {
         }
         return null;
     }
+
+    public boolean eliminarReserva(long idReserva) {
+        String sql = "DELETE FROM mesa WHERE id = ?";
+        Object[] params = {idReserva};
+        ConnectionManager.ejecutarUpdateSQL(sql, params);
+        return true;
+    }
+
+    public List<Reserva> obtenerReservas() {
+        String sql = "SELECT id, nombre, turno, numComensales, fecha " +
+                "FROM local " +
+                "WHERE id = ? ";
+        Object[] params = {};
+        Object[][] resultado = ConnectionManager.ejecutarSelectSQL(sql, params);
+        List<Reserva> reservas = new ArrayList<>();
+        if (resultado != null) {
+            for (Object[] fila : resultado) {
+                Reserva reserva = new Reserva();
+                reserva.setId((Integer) fila[0]);
+                reserva.setNombre((String) fila[1]);
+                reserva.setTurno((String) fila[2]);
+                reserva.setNumComensales((Integer) fila[3]);
+                reserva.setFecha((String) fila[3]);
+
+                reservas.add(reserva);
+            }
+
+        }
+        return reservas;
+    }
 }
