@@ -18,22 +18,22 @@ p.center {
     width: 100%;
 }
 
-#notas {
+#resrvas {
     font-family: Arial, Helvetica, sans-serif;
     border-collapse: collapse;
     width: 100%;
 }
 
-#notas td, #notas th {
-    border: 1px solid #ddd;
+#resrvas td, #resrvas th {
+    border: 2px solid black;
     padding: 8px;
 }
 
-#notas tr:nth-child(even){background-color: #f2f2f2;}
+#resrvas tr:nth-child(even){background-color: #f2f2f2;}
 
-#notas tr:hover {background-color: #ddd;}
+#resrvas tr:hover {background-color: #ddd;}
 
-#notas th {
+#resrvas th {
     padding-top: 12px;
     padding-bottom: 12px;
     text-align: left;
@@ -41,13 +41,13 @@ p.center {
     color: white;
 }
 
-#notas th { text-align: center; }
+#resrvas th { text-align: center; }
 
-#notas td:nth-child(1),
-#notas td:nth-child(4),
-#notas td:nth-child(5),
-#notas td:nth-child(6),
-#notas td:nth-child(7)
+#resrvas td:nth-child(1),
+#resrvas td:nth-child(4),
+#resrvas td:nth-child(5),
+#resrvas td:nth-child(6),
+#resrvas td:nth-child(7)
 { text-align: center; }
 
 a:link, a:visited {
