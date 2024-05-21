@@ -6,7 +6,9 @@ import spark.ModelAndView;
 import spark.Request;
 import spark.Response;
 
+import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 public class ReservaController {
@@ -20,20 +22,18 @@ public class ReservaController {
     }
 
 
-    public static ModelAndView servirReserva(Request request, Response response) {
+    public static ModelAndView serviResrva(Request request, Response response) {
         Map<String, Object> model = new HashMap<>();
+        List<Reserva> listaMesas =new ArrayList<>();
+        listaMesas.add(new Reserva(1,"javier","CENA",4,"21-'03-2024",452));
+        listaMesas.add(new Reserva(2,"Sergio","COMIDA",6,"24-'03-2024",452));
+        listaMesas.add(new Reserva(3,"Simon","CENA",2,"21-'03-2024",452));
+        listaMesas.add(new Reserva(4,"Robert","COMIDA",13,"21-'03-2024",452));
 
-        long idReserva = Long.parseLong(request.params(":id"));
-        Reserva reserva = reservaService.obtenerReserva(idReserva);
-
-        // COnsultar BD usuario con ese ID
-//        System.out.println("SELECT LOCAL BD");
-//        Local local = new Local(idLocal, "nombre", "descripcion", 89);
-
-        model.put("eliminar", false);
-        model.put("local", reserva);
-
-        return new ModelAndView(model, "reserva.ftl");
+//        List<Reserva> listaMesas = reservaService.obtenerResrvas();
+//        model.put("mesas", listaMesas);
+        return new ModelAndView(model, "lista-mesas.ftl");
     }
 
 }
+

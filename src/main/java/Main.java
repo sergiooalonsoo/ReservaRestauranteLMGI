@@ -23,7 +23,7 @@ public class Main {
         freeMarker.setConfiguration(configuration);
 
         get("/", ReservaController::servirIndice, freeMarker);
-//        get("/lista-notas", NotaController::servirLista, freeMarker);
+        get("/lista-notas", ReservaController::serviResrva, freeMarker);
         get("/nota/:id", ReservaController::servirReserva, freeMarker);
 //        get("/crea-nota", NotaController::servirCrearNota, freeMarker);
 //        post("/crea-nota", NotaController::crearNota, freeMarker);

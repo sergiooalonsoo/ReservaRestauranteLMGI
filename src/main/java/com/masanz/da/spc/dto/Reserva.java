@@ -1,6 +1,5 @@
 package com.masanz.da.spc.dto;
 
-import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 
@@ -10,26 +9,26 @@ public class Reserva {
     private String nombre;
     private String turno;
     private int numComensales;
-    private LocalDateTime fechaHora;
+    private String fecha;
     private int numeroTelefono;
 
 
     public Reserva() {
-        this(0, "", "", 0, LocalDateTime.now(), 0);
+        this(0, "", "", 0,"", 0);
     }
 
 
-    public Reserva(int id, String nombre, String turno, int numComensales, LocalDateTime fechaHora, int numeroTelefono) {
+    public Reserva(int id, String nombre, String turno, int numComensales, String fecha, int numeroTelefono) {
         this.id = id;
         this.nombre = nombre;
         this.turno = turno;
         this.numComensales = numComensales;
-        this.fechaHora = fechaHora;
+        this.fecha = fecha;
         this.numeroTelefono = numeroTelefono;
     }
 
-    public Reserva(String nombre, String turno, int numComensales, int numeroTelefono) {
-        this(0, "", "", 0, LocalDateTime.now(), 0);
+    public Reserva(String nombre, String turno, int numComensales, String fecha, int numeroTelefono) {
+        this(0, "", "", 0, "", 0);
     }
 
     //region getSet
@@ -74,18 +73,13 @@ public class Reserva {
         this.numeroTelefono = numeroTelefono;
     }
 
-    public String getFechaHora() {
-        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss");
-        return fechaHora.format(formatter);
+    public String getFecha() {
+        return fecha;
     }
 
-    public void setFechaHora(LocalDateTime fechaHora) {
-        this.fechaHora = fechaHora;
+    public void setFecha(String fecha) {
+        this.fecha = fecha;
     }
 
-    public void setFechaHora(String creado) {
-        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss");
-        this.fechaHora = LocalDateTime.parse(creado, formatter);
-    }
     //endregion
 }
