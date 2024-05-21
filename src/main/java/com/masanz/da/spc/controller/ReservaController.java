@@ -22,7 +22,7 @@ public class ReservaController {
     }
 
 
-    public static ModelAndView serviResrva(Request request, Response response) {
+    public static ModelAndView servirLista(Request request, Response response) {
         Map<String, Object> model = new HashMap<>();
         List<Reserva> listaMesas =new ArrayList<>();
         listaMesas.add(new Reserva(1,"javier","CENA",4,"21-'03-2024",452));
