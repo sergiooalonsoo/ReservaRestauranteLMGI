@@ -24,7 +24,7 @@ public class Main {
 
         get("/", ReservaController::servirIndice, freeMarker);
         get("/lista-reserva", ReservaController::servirLista, freeMarker);
-        get("/nota/:id", ReservaController::servirReserva, freeMarker);
+//        get("/nota/:id", ReservaController::servirReserva, freeMarker);
 //        get("/crea-nota", NotaController::servirCrearNota, freeMarker);
 //        post("/crea-nota", NotaController::crearNota, freeMarker);
 //        get("/edita-nota/:id", NotaController::servirEditarNota, freeMarker);

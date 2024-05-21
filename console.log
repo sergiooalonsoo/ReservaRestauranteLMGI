@@ -1,56 +1,93 @@
-08:44:09.200 [main] INFO  Main - ARRANCANDO APLICACION
-08:44:09.228 [main] INFO  spark.staticfiles.StaticFilesConfiguration - StaticResourceHandler configured with folder = /public
-08:44:09.355 [Thread-0] INFO  org.eclipse.jetty.util.log - Logging initialized @796ms to org.eclipse.jetty.util.log.Slf4jLog
-08:44:09.429 [Thread-0] INFO  spark.embeddedserver.jetty.EmbeddedJettyServer - == Spark has ignited ...
-08:44:09.430 [Thread-0] INFO  spark.embeddedserver.jetty.EmbeddedJettyServer - >> Listening on 0.0.0.0:4567
-08:44:09.433 [Thread-0] INFO  org.eclipse.jetty.server.Server - jetty-9.4.31.v20200723; built: 2020-07-23T17:57:36.812Z; git: 450ba27947e13e66baa8cd1ce7e85a4461cacc1d; jvm 17+35-2724
-08:44:09.460 [Thread-0] INFO  org.eclipse.jetty.server.session - DefaultSessionIdManager workerName=node0
-08:44:09.460 [Thread-0] INFO  org.eclipse.jetty.server.session - No SessionScavenger set, using defaults
-08:44:09.463 [Thread-0] INFO  org.eclipse.jetty.server.session - node0 Scavenging every 600000ms
-08:44:09.710 [Thread-0] INFO  org.eclipse.jetty.server.AbstractConnector - Started ServerConnector@7cb79a9d{HTTP/1.1, (http/1.1)}{0.0.0.0:4567}
-08:44:09.710 [Thread-0] INFO  org.eclipse.jetty.server.Server - Started @1154ms
-08:44:44.039 [qtp1250620092-23] INFO  spark.http.matching.MatcherFilter - The requested route [/css/style.css] has not been mapped in Spark for Accept: [text/css,*/*;q=0.1]
-08:44:44.057 [qtp1250620092-24] INFO  spark.http.matching.MatcherFilter - The requested route [/favicon.ico] has not been mapped in Spark for Accept: [image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8]
-08:44:46.099 [qtp1250620092-26] INFO  spark.http.matching.MatcherFilter - The requested route [/lista-notas] has not been mapped in Spark for Accept: [text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7]
-08:49:38.418 [main] INFO  Main - ARRANCANDO APLICACION
-08:49:38.444 [main] INFO  spark.staticfiles.StaticFilesConfiguration - StaticResourceHandler configured with folder = /public
-08:49:38.551 [Thread-0] INFO  org.eclipse.jetty.util.log - Logging initialized @650ms to org.eclipse.jetty.util.log.Slf4jLog
-08:49:38.603 [Thread-0] INFO  spark.embeddedserver.jetty.EmbeddedJettyServer - == Spark has ignited ...
-08:49:38.604 [Thread-0] INFO  spark.embeddedserver.jetty.EmbeddedJettyServer - >> Listening on 0.0.0.0:4567
-08:49:38.606 [Thread-0] INFO  org.eclipse.jetty.server.Server - jetty-9.4.31.v20200723; built: 2020-07-23T17:57:36.812Z; git: 450ba27947e13e66baa8cd1ce7e85a4461cacc1d; jvm 17+35-2724
-08:49:38.630 [Thread-0] INFO  org.eclipse.jetty.server.session - DefaultSessionIdManager workerName=node0
-08:49:38.630 [Thread-0] INFO  org.eclipse.jetty.server.session - No SessionScavenger set, using defaults
-08:49:38.633 [Thread-0] INFO  org.eclipse.jetty.server.session - node0 Scavenging every 600000ms
-08:49:38.881 [Thread-0] INFO  org.eclipse.jetty.server.AbstractConnector - Started ServerConnector@7cb79a9d{HTTP/1.1, (http/1.1)}{0.0.0.0:4567}
-08:49:38.881 [Thread-0] INFO  org.eclipse.jetty.server.Server - Started @982ms
-08:49:43.761 [qtp1250620092-25] INFO  spark.http.matching.MatcherFilter - The requested route [/lista-notas] has not been mapped in Spark for Accept: [text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7]
-08:49:53.649 [qtp1250620092-20] INFO  spark.http.matching.MatcherFilter - The requested route [/nota] has not been mapped in Spark for Accept: [text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7]
-08:50:01.540 [qtp1250620092-21] ERROR spark.http.matching.GeneralError - 
-java.lang.NumberFormatException: For input string: ":1"
-	at java.lang.NumberFormatException.forInputString(NumberFormatException.java:67) ~[?:?]
-	at java.lang.Long.parseLong(Long.java:711) ~[?:?]
-	at java.lang.Long.parseLong(Long.java:836) ~[?:?]
-	at com.masanz.da.spc.controller.ReservaController.servirReserva(ReservaController.java:41) ~[classes/:?]
-	at spark.TemplateViewRouteImpl$1.handle(TemplateViewRouteImpl.java:66) ~[spark-core-2.9.3.jar:?]
-	at spark.http.matching.Routes.execute(Routes.java:61) ~[spark-core-2.9.3.jar:?]
-	at spark.http.matching.MatcherFilter.doFilter(MatcherFilter.java:134) ~[spark-core-2.9.3.jar:?]
-	at spark.embeddedserver.jetty.JettyHandler.doHandle(JettyHandler.java:50) ~[spark-core-2.9.3.jar:?]
-	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1584) ~[jetty-server-9.4.31.v20200723.jar:9.4.31.v20200723]
-	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141) ~[jetty-server-9.4.31.v20200723.jar:9.4.31.v20200723]
-	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127) ~[jetty-server-9.4.31.v20200723.jar:9.4.31.v20200723]
-	at org.eclipse.jetty.server.Server.handle(Server.java:501) ~[jetty-server-9.4.31.v20200723.jar:9.4.31.v20200723]
-	at org.eclipse.jetty.server.HttpChannel.lambda$handle$1(HttpChannel.java:383) ~[jetty-server-9.4.31.v20200723.jar:9.4.31.v20200723]
-	at org.eclipse.jetty.server.HttpChannel.dispatch(HttpChannel.java:556) [jetty-server-9.4.31.v20200723.jar:9.4.31.v20200723]
-	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:375) [jetty-server-9.4.31.v20200723.jar:9.4.31.v20200723]
-	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:273) [jetty-server-9.4.31.v20200723.jar:9.4.31.v20200723]
-	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:311) [jetty-io-9.4.31.v20200723.jar:9.4.31.v20200723]
-	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:105) [jetty-io-9.4.31.v20200723.jar:9.4.31.v20200723]
-	at org.eclipse.jetty.io.ChannelEndPoint$1.run(ChannelEndPoint.java:104) [jetty-io-9.4.31.v20200723.jar:9.4.31.v20200723]
-	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.runTask(EatWhatYouKill.java:336) [jetty-util-9.4.31.v20200723.jar:9.4.31.v20200723]
-	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:313) [jetty-util-9.4.31.v20200723.jar:9.4.31.v20200723]
-	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.tryProduce(EatWhatYouKill.java:171) [jetty-util-9.4.31.v20200723.jar:9.4.31.v20200723]
-	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.run(EatWhatYouKill.java:129) [jetty-util-9.4.31.v20200723.jar:9.4.31.v20200723]
-	at org.eclipse.jetty.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:375) [jetty-util-9.4.31.v20200723.jar:9.4.31.v20200723]
-	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:806) [jetty-util-9.4.31.v20200723.jar:9.4.31.v20200723]
-	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:938) [jetty-util-9.4.31.v20200723.jar:9.4.31.v20200723]
-	at java.lang.Thread.run(Thread.java:833) [?:?]
+08:38:09.229 [main] INFO  Main - ARRANCANDO APLICACION
+08:38:09.272 [main] INFO  spark.staticfiles.StaticFilesConfiguration - StaticResourceHandler configured with folder = /public
+08:38:09.542 [Thread-0] INFO  org.eclipse.jetty.util.log - Logging initialized @1449ms to org.eclipse.jetty.util.log.Slf4jLog
+08:38:09.654 [Thread-0] INFO  spark.embeddedserver.jetty.EmbeddedJettyServer - == Spark has ignited ...
+08:38:09.654 [Thread-0] INFO  spark.embeddedserver.jetty.EmbeddedJettyServer - >> Listening on 0.0.0.0:4567
+08:38:09.659 [Thread-0] INFO  org.eclipse.jetty.server.Server - jetty-9.4.31.v20200723; built: 2020-07-23T17:57:36.812Z; git: 450ba27947e13e66baa8cd1ce7e85a4461cacc1d; jvm 17+35-2724
+08:38:09.700 [Thread-0] INFO  org.eclipse.jetty.server.session - DefaultSessionIdManager workerName=node0
+08:38:09.701 [Thread-0] INFO  org.eclipse.jetty.server.session - No SessionScavenger set, using defaults
+08:38:09.704 [Thread-0] INFO  org.eclipse.jetty.server.session - node0 Scavenging every 660000ms
+08:38:09.810 [Thread-0] INFO  org.eclipse.jetty.server.AbstractConnector - Started ServerConnector@57a1b2e8{HTTP/1.1, (http/1.1)}{0.0.0.0:4567}
+08:38:09.811 [Thread-0] INFO  org.eclipse.jetty.server.Server - Started @1722ms
+08:38:14.881 [qtp232244491-21] INFO  spark.http.matching.MatcherFilter - The requested route [/css/style.css] has not been mapped in Spark for Accept: [text/css,*/*;q=0.1]
+08:38:15.198 [qtp232244491-23] INFO  spark.http.matching.MatcherFilter - The requested route [/favicon.ico] has not been mapped in Spark for Accept: [image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8]
+08:38:16.714 [qtp232244491-25] INFO  spark.http.matching.MatcherFilter - The requested route [/lista-notas] has not been mapped in Spark for Accept: [text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7]
+08:38:18.859 [qtp232244491-23] INFO  spark.http.matching.MatcherFilter - The requested route [/lista-notas] has not been mapped in Spark for Accept: [text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7]
+08:38:20.570 [qtp232244491-25] INFO  spark.http.matching.MatcherFilter - The requested route [/lista-notas] has not been mapped in Spark for Accept: [text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7]
+08:38:31.402 [qtp232244491-23] INFO  spark.http.matching.MatcherFilter - The requested route [/lista-notas] has not been mapped in Spark for Accept: [text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7]
+08:40:04.264 [main] INFO  Main - ARRANCANDO APLICACION
+08:40:04.298 [main] INFO  spark.staticfiles.StaticFilesConfiguration - StaticResourceHandler configured with folder = /public
+08:40:04.436 [Thread-0] INFO  org.eclipse.jetty.util.log - Logging initialized @910ms to org.eclipse.jetty.util.log.Slf4jLog
+08:40:04.515 [Thread-0] INFO  spark.embeddedserver.jetty.EmbeddedJettyServer - == Spark has ignited ...
+08:40:04.515 [Thread-0] INFO  spark.embeddedserver.jetty.EmbeddedJettyServer - >> Listening on 0.0.0.0:4567
+08:40:04.518 [Thread-0] INFO  org.eclipse.jetty.server.Server - jetty-9.4.31.v20200723; built: 2020-07-23T17:57:36.812Z; git: 450ba27947e13e66baa8cd1ce7e85a4461cacc1d; jvm 17+35-2724
+08:40:04.564 [Thread-0] INFO  org.eclipse.jetty.server.session - DefaultSessionIdManager workerName=node0
+08:40:04.564 [Thread-0] INFO  org.eclipse.jetty.server.session - No SessionScavenger set, using defaults
+08:40:04.567 [Thread-0] INFO  org.eclipse.jetty.server.session - node0 Scavenging every 600000ms
+08:40:04.657 [Thread-0] INFO  org.eclipse.jetty.server.AbstractConnector - Started ServerConnector@6a248552{HTTP/1.1, (http/1.1)}{0.0.0.0:4567}
+08:40:04.657 [Thread-0] INFO  org.eclipse.jetty.server.Server - Started @1134ms
+08:40:07.925 [qtp81635739-20] INFO  spark.http.matching.MatcherFilter - The requested route [/css/style.css] has not been mapped in Spark for Accept: [text/css,*/*;q=0.1]
+08:40:08.583 [qtp81635739-26] INFO  spark.http.matching.MatcherFilter - The requested route [/lista-notas] has not been mapped in Spark for Accept: [text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7]
+08:40:09.796 [qtp81635739-21] INFO  spark.http.matching.MatcherFilter - The requested route [/lista-notas] has not been mapped in Spark for Accept: [text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7]
+08:40:09.940 [qtp81635739-26] INFO  spark.http.matching.MatcherFilter - The requested route [/lista-notas] has not been mapped in Spark for Accept: [text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7]
+08:40:11.743 [qtp81635739-26] INFO  spark.http.matching.MatcherFilter - The requested route [/css/style.css] has not been mapped in Spark for Accept: [text/css,*/*;q=0.1]
+08:40:11.902 [qtp81635739-26] INFO  spark.http.matching.MatcherFilter - The requested route [/css/style.css] has not been mapped in Spark for Accept: [text/css,*/*;q=0.1]
+08:40:13.241 [qtp81635739-21] INFO  spark.http.matching.MatcherFilter - The requested route [/lista-notas] has not been mapped in Spark for Accept: [text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7]
+08:46:39.819 [main] INFO  Main - ARRANCANDO APLICACION
+08:46:39.851 [main] INFO  spark.staticfiles.StaticFilesConfiguration - StaticResourceHandler configured with folder = /public
+08:46:39.990 [Thread-0] INFO  org.eclipse.jetty.util.log - Logging initialized @925ms to org.eclipse.jetty.util.log.Slf4jLog
+08:46:40.060 [Thread-0] INFO  spark.embeddedserver.jetty.EmbeddedJettyServer - == Spark has ignited ...
+08:46:40.061 [Thread-0] INFO  spark.embeddedserver.jetty.EmbeddedJettyServer - >> Listening on 0.0.0.0:4567
+08:46:40.066 [Thread-0] INFO  org.eclipse.jetty.server.Server - jetty-9.4.31.v20200723; built: 2020-07-23T17:57:36.812Z; git: 450ba27947e13e66baa8cd1ce7e85a4461cacc1d; jvm 17+35-2724
+08:46:40.104 [Thread-0] INFO  org.eclipse.jetty.server.session - DefaultSessionIdManager workerName=node0
+08:46:40.104 [Thread-0] INFO  org.eclipse.jetty.server.session - No SessionScavenger set, using defaults
+08:46:40.108 [Thread-0] INFO  org.eclipse.jetty.server.session - node0 Scavenging every 600000ms
+08:46:40.204 [Thread-0] INFO  org.eclipse.jetty.server.AbstractConnector - Started ServerConnector@56f76519{HTTP/1.1, (http/1.1)}{0.0.0.0:4567}
+08:46:40.204 [Thread-0] INFO  org.eclipse.jetty.server.Server - Started @1142ms
+08:46:43.020 [qtp1525177530-25] INFO  spark.http.matching.MatcherFilter - The requested route [/lista-notas] has not been mapped in Spark for Accept: [text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7]
+08:46:44.764 [qtp1525177530-20] INFO  spark.http.matching.MatcherFilter - The requested route [/lista-notas] has not been mapped in Spark for Accept: [text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7]
+08:46:45.830 [qtp1525177530-24] INFO  spark.http.matching.MatcherFilter - The requested route [/lista-notas] has not been mapped in Spark for Accept: [text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7]
+08:46:45.973 [qtp1525177530-26] INFO  spark.http.matching.MatcherFilter - The requested route [/lista-notas] has not been mapped in Spark for Accept: [text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7]
+08:46:46.117 [qtp1525177530-24] INFO  spark.http.matching.MatcherFilter - The requested route [/lista-notas] has not been mapped in Spark for Accept: [text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7]
+08:46:46.277 [qtp1525177530-26] INFO  spark.http.matching.MatcherFilter - The requested route [/lista-notas] has not been mapped in Spark for Accept: [text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7]
+08:46:46.437 [qtp1525177530-24] INFO  spark.http.matching.MatcherFilter - The requested route [/lista-notas] has not been mapped in Spark for Accept: [text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7]
+08:46:46.597 [qtp1525177530-26] INFO  spark.http.matching.MatcherFilter - The requested route [/lista-notas] has not been mapped in Spark for Accept: [text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7]
+08:46:46.724 [qtp1525177530-24] INFO  spark.http.matching.MatcherFilter - The requested route [/lista-notas] has not been mapped in Spark for Accept: [text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7]
+08:46:48.945 [qtp1525177530-24] INFO  spark.http.matching.MatcherFilter - The requested route [/css/style.css] has not been mapped in Spark for Accept: [text/css,*/*;q=0.1]
+08:46:49.039 [qtp1525177530-24] INFO  spark.http.matching.MatcherFilter - The requested route [/css/style.css] has not been mapped in Spark for Accept: [text/css,*/*;q=0.1]
+08:46:49.198 [qtp1525177530-24] INFO  spark.http.matching.MatcherFilter - The requested route [/css/style.css] has not been mapped in Spark for Accept: [text/css,*/*;q=0.1]
+08:46:50.009 [qtp1525177530-26] INFO  spark.http.matching.MatcherFilter - The requested route [/lista-notas] has not been mapped in Spark for Accept: [text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7]
+08:51:29.685 [main] INFO  Main - ARRANCANDO APLICACION
+08:51:29.715 [main] INFO  spark.staticfiles.StaticFilesConfiguration - StaticResourceHandler configured with folder = /public
+08:51:29.892 [Thread-0] INFO  org.eclipse.jetty.util.log - Logging initialized @965ms to org.eclipse.jetty.util.log.Slf4jLog
+08:51:29.963 [Thread-0] INFO  spark.embeddedserver.jetty.EmbeddedJettyServer - == Spark has ignited ...
+08:51:29.964 [Thread-0] INFO  spark.embeddedserver.jetty.EmbeddedJettyServer - >> Listening on 0.0.0.0:4567
+08:51:29.967 [Thread-0] INFO  org.eclipse.jetty.server.Server - jetty-9.4.31.v20200723; built: 2020-07-23T17:57:36.812Z; git: 450ba27947e13e66baa8cd1ce7e85a4461cacc1d; jvm 17+35-2724
+08:51:29.997 [Thread-0] INFO  org.eclipse.jetty.server.session - DefaultSessionIdManager workerName=node0
+08:51:29.997 [Thread-0] INFO  org.eclipse.jetty.server.session - No SessionScavenger set, using defaults
+08:51:30.000 [Thread-0] INFO  org.eclipse.jetty.server.session - node0 Scavenging every 660000ms
+08:51:30.089 [Thread-0] INFO  org.eclipse.jetty.server.AbstractConnector - Started ServerConnector@6a248552{HTTP/1.1, (http/1.1)}{0.0.0.0:4567}
+08:51:30.089 [Thread-0] INFO  org.eclipse.jetty.server.Server - Started @1165ms
+08:51:31.714 [qtp81635739-25] INFO  spark.http.matching.MatcherFilter - The requested route [/lista-notas] has not been mapped in Spark for Accept: [text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7]
+08:51:31.785 [qtp81635739-20] INFO  spark.http.matching.MatcherFilter - The requested route [/lista-notas] has not been mapped in Spark for Accept: [text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7]
+08:51:34.540 [qtp81635739-24] INFO  spark.http.matching.MatcherFilter - The requested route [/lista-notas] has not been mapped in Spark for Accept: [text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7]
+08:57:23.790 [main] INFO  Main - ARRANCANDO APLICACION
+08:57:23.824 [main] INFO  spark.staticfiles.StaticFilesConfiguration - StaticResourceHandler configured with folder = /public
+08:57:23.958 [Thread-0] INFO  org.eclipse.jetty.util.log - Logging initialized @879ms to org.eclipse.jetty.util.log.Slf4jLog
+08:57:24.025 [Thread-0] INFO  spark.embeddedserver.jetty.EmbeddedJettyServer - == Spark has ignited ...
+08:57:24.025 [Thread-0] INFO  spark.embeddedserver.jetty.EmbeddedJettyServer - >> Listening on 0.0.0.0:4567
+08:57:24.029 [Thread-0] INFO  org.eclipse.jetty.server.Server - jetty-9.4.31.v20200723; built: 2020-07-23T17:57:36.812Z; git: 450ba27947e13e66baa8cd1ce7e85a4461cacc1d; jvm 17+35-2724
+08:57:24.064 [Thread-0] INFO  org.eclipse.jetty.server.session - DefaultSessionIdManager workerName=node0
+08:57:24.065 [Thread-0] INFO  org.eclipse.jetty.server.session - No SessionScavenger set, using defaults
+08:57:24.068 [Thread-0] INFO  org.eclipse.jetty.server.session - node0 Scavenging every 660000ms
+08:57:24.174 [Thread-0] INFO  org.eclipse.jetty.server.AbstractConnector - Started ServerConnector@56f76519{HTTP/1.1, (http/1.1)}{0.0.0.0:4567}
+08:57:24.174 [Thread-0] INFO  org.eclipse.jetty.server.Server - Started @1099ms
+08:57:27.595 [qtp1525177530-20] INFO  spark.http.matching.MatcherFilter - The requested route [/css/style.css] has not been mapped in Spark for Accept: [text/css,*/*;q=0.1]
+08:57:28.286 [qtp1525177530-24] INFO  spark.http.matching.MatcherFilter - The requested route [/lista-notas] has not been mapped in Spark for Accept: [text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7]
+08:57:29.366 [qtp1525177530-26] INFO  spark.http.matching.MatcherFilter - The requested route [/lista-notas] has not been mapped in Spark for Accept: [text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7]
+08:57:29.495 [qtp1525177530-24] INFO  spark.http.matching.MatcherFilter - The requested route [/lista-notas] has not been mapped in Spark for Accept: [text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7]
+08:57:29.638 [qtp1525177530-26] INFO  spark.http.matching.MatcherFilter - The requested route [/lista-notas] has not been mapped in Spark for Accept: [text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7]
+08:57:29.782 [qtp1525177530-24] INFO  spark.http.matching.MatcherFilter - The requested route [/lista-notas] has not been mapped in Spark for Accept: [text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7]
+08:57:30.052 [qtp1525177530-26] INFO  spark.http.matching.MatcherFilter - The requested route [/lista-notas] has not been mapped in Spark for Accept: [text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7]
+08:57:30.244 [qtp1525177530-24] INFO  spark.http.matching.MatcherFilter - The requested route [/lista-notas] has not been mapped in Spark for Accept: [text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7]
+08:57:39.015 [qtp1525177530-24] INFO  spark.http.matching.MatcherFilter - The requested route [/css/style.css] has not been mapped in Spark for Accept: [text/css,*/*;q=0.1]
