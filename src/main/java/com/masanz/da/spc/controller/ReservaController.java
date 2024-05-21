@@ -24,15 +24,15 @@ public class ReservaController {
 
     public static ModelAndView servirLista(Request request, Response response) {
         Map<String, Object> model = new HashMap<>();
-        List<Reserva> listaMesas =new ArrayList<>();
-        listaMesas.add(new Reserva(1,"javier","CENA",4,"21-'03-2024",452));
-        listaMesas.add(new Reserva(2,"Sergio","COMIDA",6,"24-'03-2024",452));
-        listaMesas.add(new Reserva(3,"Simon","CENA",2,"21-'03-2024",452));
-        listaMesas.add(new Reserva(4,"Robert","COMIDA",13,"21-'03-2024",452));
+        List<Reserva> listaReservas =new ArrayList<>();
+        listaReservas.add(new Reserva(1,"javier","CENA",4,"21-'03-2024",452));
+        listaReservas.add(new Reserva(2,"Sergio","COMIDA",6,"24-'03-2024",452));
+        listaReservas.add(new Reserva(3,"Simon","CENA",2,"21-'03-2024",452));
+        listaReservas.add(new Reserva(4,"Robert","COMIDA",13,"21-'03-2024",452));
 
 //        List<Reserva> listaMesas = reservaService.obtenerResrvas();
-//        model.put("mesas", listaMesas);
-        return new ModelAndView(model, "lista-mesas.ftl");
+       model.put("reservas", listaReservas);
+        return new ModelAndView(model, "lista-reservas.ftl");
     }
 
 }
