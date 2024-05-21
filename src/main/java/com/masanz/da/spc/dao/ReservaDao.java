@@ -59,4 +59,15 @@ public class ReservaDao {
         }
         return reservas;
     }
+
+//    public Reserva guardarReserva(Reserva reserva) {
+//        String sql = "INSERT INTO local (nombre, turno, numComensales, fecha, numeroTelefono) " +
+//                "VALUES (?, ?, ?, ?, ?)";
+//        Object[] params = {reserva.getNombre(), reserva.getTurno(), reserva.getNumComensales(), reserva.getFecha(), reserva.getNumeroTelefono()};
+//        int id = (int) ConnectionManager.ejecutarInsertSQL(sql, params);
+//        if (id > 0){
+//            reserva.setId(id);
+//        }
+//        return reserva;
+//    }
 }

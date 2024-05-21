@@ -19,4 +19,10 @@ public class ReservaService {
     public List<Reserva> obtenerReservas() {
         return reservaDao.obtenerReservas();
     }
+
+
+
+//    public Reserva guardarReserva(Reserva reserva) {
+//        return reservaDao.guardarReserva(reserva);
+//    }
 }

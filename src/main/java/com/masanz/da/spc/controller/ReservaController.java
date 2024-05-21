@@ -72,7 +72,6 @@ public class ReservaController {
         response.redirect("/lista-reservas");
 
         return null;
-
 //        reserva = reservaService.guardarReserva(reserva);
 //        if (reserva.getId() != 0) {
 //            response.redirect("/lista-reservas");
