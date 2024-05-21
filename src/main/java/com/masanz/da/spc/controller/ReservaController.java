@@ -38,18 +38,53 @@ public class ReservaController {
     public static ModelAndView servirReserva(Request request, Response response) {
         Map<String, Object> model = new HashMap<>();
 
-        long idReserva = Long.parseLong(request.params(":id"));
+        int idReserva = Integer.parseInt(request.params(":id"));
         Reserva reserva = reservaService.obtenerReserva(idReserva);
 
-        // COnsultar BD usuario con ese ID
-//        System.out.println("SELECT LOCAL BD");
-//        Local local = new Local(idLocal, "nombre", "descripcion", 89);
+//         COnsultar BD usuario con ese ID;
+        System.out.println("SELECT LOCAL BD");
+        Reserva reserva1 = new Reserva(idReserva, "nombre", "turno", 89, "2015-12-12", 89);
 
-        model.put("eliminar", false);
-        model.put("local", reserva);
+//        model.put("eliminar", false);
+//        model.put("local", reserva);
 
         return new ModelAndView(model, "reserva.ftl");
     }
 
+    public static ModelAndView servirCrearReserva(Request request, Response response) {
+        Map<String, Object> model = new HashMap<>();
+        Reserva reserva = new Reserva();
+        model.put("agregar", true);
+        model.put("reserva", reserva);
+        return new ModelAndView(model, "form-reserva.ftl");
+    }
+
+
+    public static ModelAndView crearReserva(Request request, Response response) {
+        String nombre = request.queryParams("nombre");
+        String turno = request.queryParams("turno");
+        int numComensales = Integer.parseInt(request.queryParams("numcomensales"));
+        String fecha = request.queryParams("fecha");
+        int numeroTelefono = Integer.parseInt(request.queryParams("numeroTelefono"));
+        Reserva reserva = new Reserva(nombre, turno, numComensales, fecha, numeroTelefono);
+
+        System.out.println("INSERT RESERVA BD");
+        System.out.println(reserva.toString());
+        // Meter en la BD el usuario
+        // obtener el ID del usuario
+
+        response.redirect("/lista-reservas");
+
+        return null;
+
+//        reserva = reservaService.guardarReserva(reserva);
+//        if (reserva.getId() != 0) {
+//            response.redirect("/lista-reservas");
+//            response.redirect("/reserva/" + reserva.getId());
+//        }else {
+//            response.redirect("/error");
+//        }
+//        return null;
+    }
 }
 

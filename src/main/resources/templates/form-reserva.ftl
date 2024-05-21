@@ -2,11 +2,11 @@
 <html>
 <head>
     <meta charset="UTF-8" />
-    <title><#if agregar>Crear Reservas<#else>Editar Reserva</#if></title>
+    <title>Crear Reserva</title>
     <link rel="stylesheet" type="text/css" href="/css/style.css"/>
 </head>
 <body>
-<h1><#if agregar>Crear Reserva<#else>Editar Reserva</#if></h1>
+<h1>Crear Reserva</h1>
 <a href="/lista-reservas">Regresar al listado</a>
 <br/><br/>
 
@@ -16,35 +16,35 @@
     <#if agregar>
         <#assign accion>/crea-reserva</#assign>
         <#assign texto>Crear</#assign>
-    <#else>
-        <#assign accion>${'/edita-reserva/' + reserva.id}</#assign>
-        <#assign texto>Guardar</#assign>
     </#if>
     <form action="${accion}" method="POST">
-        <div class="container">
-            <div class="w75">
-                <label for="titulo">Título</label>
-                <input type="text" name="titulo" value="${reserva.titulo}"/>
-            </div>
-            <div class="w25 center">
-                <#if reserva.id != 0>
-                    <label for="id">ID</label>
-                    <input type="text" name="id" value="${reserva.id}" disabled="disabled"/>
-                </#if>
-            </div>
-        </div>
-
-        <label for="contenido">Contenido</label>
-        <textarea name="contenido">${nota.contenido}</textarea>
-
-        <#if nota.id != 0>
-            <div class="container">
-                <div class="w50 center">
-                    <label for="creado">Creado</label>
-                    <input type="text" name="creado" value="${reserva.creado}" disabled="disabled"/>
-                </div>
+        <#if reserva.id != 0>
+            <div>
+                <label for="id">ID</label>
+                <input type="text" id="id" name="id" value="${reserva.id}" disabled="disabled"/>
             </div>
         </#if>
+        <div>
+            <label for="nombre">Nombre</label>
+            <input type="text" id="nombre" name="nombre" value="${reserva.nombre}"/>
+        </div>
+        <div>
+            <label for="turno">Turno</label>
+            <input type="text" id="turno" name="turno" value="${reserva.turno}"/>
+        </div>
+        <div>
+            <label for="numComensales">Numero de Comensales</label>
+            <input type="text" id="numComensales" name="numComensales" value="${reserva.numComensales}"/>
+        </div>
+        <div>
+            <label for="fecha">Fecha</label>
+            <input type="text" id="fecha" name="fecha" value="${reserva.fecha}"/>
+        </div>
+        <div>
+            <label for="numeroTelefono">Numero de Telefono</label>
+            <input type="text" id="numeroTelefono" name="numeroTelefono" value="${reserva.numeroTelefono}"/>
+        </div>
+
 
         <input type="submit" value="${texto}" />
     </form>

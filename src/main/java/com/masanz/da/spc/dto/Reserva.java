@@ -82,4 +82,16 @@ public class Reserva {
     }
 
     //endregion
+
+    @Override
+    public String toString() {
+        return "Reserva{" +
+                "id=" + id +
+                ", nombre='" + nombre + '\'' +
+                ", turno='" + turno + '\'' +
+                ", numComensales=" + numComensales +
+                ", fecha='" + fecha + '\'' +
+                ", numeroTelefono=" + numeroTelefono +
+                '}';
+    }
 }
