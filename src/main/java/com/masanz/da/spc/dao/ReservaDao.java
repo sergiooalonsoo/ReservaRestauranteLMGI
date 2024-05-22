@@ -20,8 +20,8 @@ public class ReservaDao {
         List<Reserva> reservas = new ArrayList<>();
         if (resultado != null && resultado.length == 1) {
             Reserva reserva = new Reserva();
-
-            reserva.setId((int) resultado[0][0]);
+            int id = (int)((long)((Long)resultado[0][0]));
+            reserva.setId(id);
             reserva.setNombre((String) resultado[0][1]);
             reserva.setTurno((String) resultado[0][2]);
             reserva.setNumComensales((int) resultado[0][3]);
@@ -33,7 +33,7 @@ public class ReservaDao {
     }
 
     public boolean eliminarReserva(long idReserva) {
-        String sql = "DELETE FROM mesa WHERE id = ?";
+        String sql = "DELETE FROM reserva WHERE id = ?";
         Object[] params = {idReserva};
         ConnectionManager.ejecutarUpdateSQL(sql, params);
         return true;

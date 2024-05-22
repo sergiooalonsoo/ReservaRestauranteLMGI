@@ -80,13 +80,17 @@ public class ReservaController {
     }
 
     public static ModelAndView servirEliminarReseva(Request request, Response response) {
-        int idReserva = Integer.parseInt(request.params(":id"));
-        if (reservaService.eliminarReserva(idReserva)) {
-            response.redirect("/lista-reservas");
-        }else {
-            response.redirect("/error");
+        int idReserva = Integer.parseInt((request.params(":id")));
+        Map<String, Object> model = new HashMap<>();
+        Reserva reserva = reservaService.obtenerReserva(idReserva);
+        model.put("eliminar", true);
+        model.put("reserva", reserva);
+        if (reserva.getId() == 0) {
+            model.put("mensajeError", "Reserva no encontrada");
         }
-        return null;
+        return new ModelAndView(model, "reserva.ftl");
     }
+
+
 }
 

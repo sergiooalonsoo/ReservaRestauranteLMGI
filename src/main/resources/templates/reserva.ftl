@@ -37,10 +37,7 @@
             <th>Fecha</th>
             <td>${reserva.fecha}</td>
         </tr>
-        <tr>
-            <th>Creado</th>
-            <td>${reserva.creado}</td>
-        </tr>
+
     </table>
     <br/><br/>
 
