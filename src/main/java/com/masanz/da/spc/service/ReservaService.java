@@ -7,7 +7,7 @@ import java.util.List;
 
 public class ReservaService {
 
-    private ReservaDao reservaDao;
+    private ReservaDao reservaDao = new ReservaDao();
     public Reserva obtenerReserva(int idReserva) {
             return reservaDao.obtenerReserva(idReserva);
     }

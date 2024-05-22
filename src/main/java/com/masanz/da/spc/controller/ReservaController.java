@@ -37,12 +37,9 @@ public class ReservaController {
         int idReserva = Integer.parseInt(request.params(":id"));
         Reserva reserva = reservaService.obtenerReserva(idReserva);
 
-//         COnsultar BD usuario con ese ID;
-        System.out.println("SELECT LOCAL BD");
-        Reserva reserva1 = new Reserva(idReserva, "nombre", "turno", 89, "2015-12-12", 89);
 
-//        model.put("eliminar", false);
-//        model.put("local", reserva);
+        model.put("eliminar", false);
+        model.put("local", reserva);
 
         return new ModelAndView(model, "reserva.ftl");
     }

@@ -7,10 +7,13 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class ReservaDao {
+    public ReservaDao(){
+        ConnectionManager.conectar("reservas_db","proy","password");
+    }
 
     public Reserva obtenerReserva(long idReserva) {
-        String sql = "SELECT id, nombre, turno, numComensales, fecha, numeroTelefono " +
-                "FROM local " +
+        String sql = "SELECT id, nombre, turno, numComensales, fecha " +
+                "FROM reserva " +
                 "WHERE id = ? ";
         Object[] params = {idReserva};
         Object[][] resultado = ConnectionManager.ejecutarSelectSQL(sql, params);
@@ -21,9 +24,8 @@ public class ReservaDao {
             reserva.setId((int) resultado[0][0]);
             reserva.setNombre((String) resultado[0][1]);
             reserva.setTurno((String) resultado[0][2]);
-            reserva.setNumComensales((int) resultado[0][2]);
-            reserva.setFecha((String) resultado[0][3]);
-            reserva.setNumeroTelefono((Integer) resultado[0][3]);
+            reserva.setNumComensales((int) resultado[0][3]);
+            reserva.setFecha((String) resultado[0][4]);
 
             return reserva;
         }
@@ -39,19 +41,20 @@ public class ReservaDao {
 
     public List<Reserva> obtenerReservas() {
         String sql = "SELECT id, nombre, turno, numComensales, fecha " +
-                "FROM local " +
-                "WHERE id = ? ";
+                "FROM reserva " +
+                "ORDER BY id DESC ";
         Object[] params = {};
         Object[][] resultado = ConnectionManager.ejecutarSelectSQL(sql, params);
         List<Reserva> reservas = new ArrayList<>();
         if (resultado != null) {
             for (Object[] fila : resultado) {
                 Reserva reserva = new Reserva();
-                reserva.setId((Integer) fila[0]);
+                int id = (int)((long)((Long)fila[0]));
+                reserva.setId(id);
                 reserva.setNombre((String) fila[1]);
                 reserva.setTurno((String) fila[2]);
                 reserva.setNumComensales((Integer) fila[3]);
-                reserva.setFecha((String) fila[3]);
+                reserva.setFecha((String) fila[4]);
 
                 reservas.add(reserva);
             }
