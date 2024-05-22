@@ -32,7 +32,7 @@ public class ReservaDao {
         return null;
     }
 
-    public boolean eliminarReserva(long idReserva) {
+    public boolean eliminarReserva(int idReserva) {
         String sql = "DELETE FROM reserva WHERE id = ?";
         Object[] params = {idReserva};
         ConnectionManager.ejecutarUpdateSQL(sql, params);
@@ -63,14 +63,15 @@ public class ReservaDao {
         return reservas;
     }
 
-//    public Reserva guardarReserva(Reserva reserva) {
-//        String sql = "INSERT INTO local (nombre, turno, numComensales, fecha, numeroTelefono) " +
-//                "VALUES (?, ?, ?, ?, ?)";
-//        Object[] params = {reserva.getNombre(), reserva.getTurno(), reserva.getNumComensales(), reserva.getFecha(), reserva.getNumeroTelefono()};
-//        int id = (int) ConnectionManager.ejecutarInsertSQL(sql, params);
-//        if (id > 0){
-//            reserva.setId(id);
-//        }
-//        return reserva;
-//    }
+
+    public Reserva guardarReserva(Reserva reserva) {
+        String sql = "INSERT INTO reserva (nombre, turno, numComensales, fecha, numeroTelefono) " +
+                "VALUES (?, ?, ?, ?, ?)";
+        Object[] params = {reserva.getNombre(), reserva.getTurno(), reserva.getNumComensales(), reserva.getFecha(), reserva.getNumeroTelefono()};
+        int id = (int) ConnectionManager.ejecutarInsertSQL(sql, params);
+        if (id > 0){
+            reserva.setId(id);
+        }
+        return reserva;
+    }
 }

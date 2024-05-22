@@ -24,11 +24,11 @@ public class Main {
 
         get("/", ReservaController::servirIndice, freeMarker);
         get("/lista-reservas", ReservaController::servirLista, freeMarker);
-        get("/nota/:id", ReservaController::servirReserva, freeMarker);
+        get("/reserva/:id", ReservaController::servirReserva, freeMarker);
         get("/crea-reserva", ReservaController::servirCrearReserva, freeMarker);
         post("/crea-reserva", ReservaController::crearReserva, freeMarker);
         get("/elimina-reserva/:id", ReservaController::servirEliminarReseva, freeMarker);
-//        post("/elimina-nota/:id", NotaController::eliminarNota, freeMarker);
+        post("/elimina-reserva/:id", ReservaController::eliminarReserva, freeMarker);
 //        get("/error", NotaController::servirError, freeMarker);
 //
 //        init();

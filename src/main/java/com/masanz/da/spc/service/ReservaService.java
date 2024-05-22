@@ -20,9 +20,7 @@ public class ReservaService {
         return reservaDao.obtenerReservas();
     }
 
-
-
-//    public Reserva guardarReserva(Reserva reserva) {
-//        return reservaDao.guardarReserva(reserva);
-//    }
+    public Reserva guadarReserva(Reserva reserva) {
+        return reservaDao.guardarReserva(reserva);
+    }
 }

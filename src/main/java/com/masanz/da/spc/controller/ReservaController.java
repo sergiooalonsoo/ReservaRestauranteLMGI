@@ -39,9 +39,10 @@ public class ReservaController {
 
 
         model.put("eliminar", false);
-        model.put("local", reserva);
+        model.put("reserva", reserva);
 
         return new ModelAndView(model, "reserva.ftl");
+
     }
 
     public static ModelAndView servirCrearReserva(Request request, Response response) {
@@ -56,27 +57,19 @@ public class ReservaController {
     public static ModelAndView crearReserva(Request request, Response response) {
         String nombre = request.queryParams("nombre");
         String turno = request.queryParams("turno");
-        int numComensales = Integer.parseInt(request.queryParams("numcomensales"));
+        int numComensales = Integer.parseInt(request.queryParams("numComensales"));
         String fecha = request.queryParams("fecha");
         int numeroTelefono = Integer.parseInt(request.queryParams("numeroTelefono"));
         Reserva reserva = new Reserva(nombre, turno, numComensales, fecha, numeroTelefono);
 
-        System.out.println("INSERT RESERVA BD");
-        System.out.println(reserva.toString());
-        // Meter en la BD el usuario
-        // obtener el ID del usuario
-
-        response.redirect("/lista-reservas");
-
+        reserva = reservaService.guadarReserva(reserva);
+        if (reserva.getId() != 0) {
+//            response.redirect("/lista-reserva");
+            response.redirect("/reserva/" + reserva.getId());
+        }else {
+            response.redirect("/error");
+        }
         return null;
-//        reserva = reservaService.guardarReserva(reserva);
-//        if (reserva.getId() != 0) {
-//            response.redirect("/lista-reservas");
-//            response.redirect("/reserva/" + reserva.getId());
-//        }else {
-//            response.redirect("/error");
-//        }
-//        return null;
     }
 
     public static ModelAndView servirEliminarReseva(Request request, Response response) {
@@ -92,5 +85,15 @@ public class ReservaController {
     }
 
 
+    public static ModelAndView eliminarReserva(Request request, Response response) {
+        int idReserva = Integer.parseInt(request.params(":id"));
+        if (reservaService.eliminarReserva(idReserva)) {
+            response.redirect("/lista-reservas");
+        }else {
+            response.redirect("/error");
+        }
+        return null;
+
+    }
 }
 
