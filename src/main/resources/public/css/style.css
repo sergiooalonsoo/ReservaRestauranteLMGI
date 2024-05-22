@@ -18,22 +18,22 @@ p.center {
     width: 100%;
 }
 
-#resrvas {
+#reservas {
     font-family: Arial, Helvetica, sans-serif;
     border-collapse: collapse;
     width: 100%;
 }
 
-#resrvas td, #resrvas th {
+#reservas td, #reservas th {
     border: 2px solid black;
     padding: 8px;
 }
 
-#resrvas tr:nth-child(even){background-color: #f2f2f2;}
+#reservas tr:nth-child(even){background-color: #f2f2f2;}
 
-#resrvas tr:hover {background-color: #ddd;}
+#reservas tr:hover {background-color: #ddd;}
 
-#resrvas th {
+#reservas th {
     padding-top: 12px;
     padding-bottom: 12px;
     text-align: left;
@@ -41,13 +41,13 @@ p.center {
     color: white;
 }
 
-#resrvas th { text-align: center; }
+#reservas th { text-align: center; }
 
-#resrvas td:nth-child(1),
-#resrvas td:nth-child(4),
-#resrvas td:nth-child(5),
-#resrvas td:nth-child(6),
-#resrvas td:nth-child(7)
+#reservas td:nth-child(1),
+#reservas td:nth-child(4),
+#reservas td:nth-child(5),
+#reservas td:nth-child(6),
+#reservas td:nth-child(7)
 { text-align: center; }
 
 a:link, a:visited {
@@ -126,4 +126,8 @@ div.center{
 }
 input:disabled {
     text-align: center;
+}
+
+table, th, td {
+    border: 1px solid black;
 }
