@@ -2415,3 +2415,36 @@ java.lang.NumberFormatException: Cannot parse null string
 11:57:57.533 [Thread-0] INFO  org.eclipse.jetty.server.session - node0 Scavenging every 600000ms
 11:57:57.736 [Thread-0] INFO  org.eclipse.jetty.server.AbstractConnector - Started ServerConnector@70788144{HTTP/1.1, (http/1.1)}{0.0.0.0:4567}
 11:57:57.737 [Thread-0] INFO  org.eclipse.jetty.server.Server - Started @947ms
+12:13:37.944 [main] INFO  Main - ARRANCANDO APLICACION
+12:13:37.969 [main] INFO  spark.staticfiles.StaticFilesConfiguration - StaticResourceHandler configured with folder = /public
+12:13:38.073 [Thread-0] INFO  org.eclipse.jetty.util.log - Logging initialized @655ms to org.eclipse.jetty.util.log.Slf4jLog
+12:13:38.127 [Thread-0] INFO  spark.embeddedserver.jetty.EmbeddedJettyServer - == Spark has ignited ...
+12:13:38.128 [Thread-0] INFO  spark.embeddedserver.jetty.EmbeddedJettyServer - >> Listening on 0.0.0.0:4567
+12:13:38.130 [Thread-0] INFO  org.eclipse.jetty.server.Server - jetty-9.4.31.v20200723; built: 2020-07-23T17:57:36.812Z; git: 450ba27947e13e66baa8cd1ce7e85a4461cacc1d; jvm 17+35-2724
+12:13:38.153 [Thread-0] INFO  org.eclipse.jetty.server.session - DefaultSessionIdManager workerName=node0
+12:13:38.153 [Thread-0] INFO  org.eclipse.jetty.server.session - No SessionScavenger set, using defaults
+12:13:38.156 [Thread-0] INFO  org.eclipse.jetty.server.session - node0 Scavenging every 660000ms
+12:13:38.365 [Thread-0] INFO  org.eclipse.jetty.server.AbstractConnector - Started ServerConnector@70788144{HTTP/1.1, (http/1.1)}{0.0.0.0:4567}
+12:13:38.366 [Thread-0] INFO  org.eclipse.jetty.server.Server - Started @949ms
+12:14:32.933 [main] INFO  Main - ARRANCANDO APLICACION
+12:14:32.958 [main] INFO  spark.staticfiles.StaticFilesConfiguration - StaticResourceHandler configured with folder = /public
+12:14:33.064 [Thread-0] INFO  org.eclipse.jetty.util.log - Logging initialized @675ms to org.eclipse.jetty.util.log.Slf4jLog
+12:14:33.117 [Thread-0] INFO  spark.embeddedserver.jetty.EmbeddedJettyServer - == Spark has ignited ...
+12:14:33.117 [Thread-0] INFO  spark.embeddedserver.jetty.EmbeddedJettyServer - >> Listening on 0.0.0.0:4567
+12:14:33.120 [Thread-0] INFO  org.eclipse.jetty.server.Server - jetty-9.4.31.v20200723; built: 2020-07-23T17:57:36.812Z; git: 450ba27947e13e66baa8cd1ce7e85a4461cacc1d; jvm 17+35-2724
+12:14:33.143 [Thread-0] INFO  org.eclipse.jetty.server.session - DefaultSessionIdManager workerName=node0
+12:14:33.143 [Thread-0] INFO  org.eclipse.jetty.server.session - No SessionScavenger set, using defaults
+12:14:33.145 [Thread-0] INFO  org.eclipse.jetty.server.session - node0 Scavenging every 660000ms
+12:14:33.353 [Thread-0] INFO  org.eclipse.jetty.server.AbstractConnector - Started ServerConnector@70788144{HTTP/1.1, (http/1.1)}{0.0.0.0:4567}
+12:14:33.353 [Thread-0] INFO  org.eclipse.jetty.server.Server - Started @966ms
+12:15:12.541 [main] INFO  Main - ARRANCANDO APLICACION
+12:15:12.566 [main] INFO  spark.staticfiles.StaticFilesConfiguration - StaticResourceHandler configured with folder = /public
+12:15:12.670 [Thread-0] INFO  org.eclipse.jetty.util.log - Logging initialized @660ms to org.eclipse.jetty.util.log.Slf4jLog
+12:15:12.723 [Thread-0] INFO  spark.embeddedserver.jetty.EmbeddedJettyServer - == Spark has ignited ...
+12:15:12.723 [Thread-0] INFO  spark.embeddedserver.jetty.EmbeddedJettyServer - >> Listening on 0.0.0.0:4567
+12:15:12.726 [Thread-0] INFO  org.eclipse.jetty.server.Server - jetty-9.4.31.v20200723; built: 2020-07-23T17:57:36.812Z; git: 450ba27947e13e66baa8cd1ce7e85a4461cacc1d; jvm 17+35-2724
+12:15:12.752 [Thread-0] INFO  org.eclipse.jetty.server.session - DefaultSessionIdManager workerName=node0
+12:15:12.752 [Thread-0] INFO  org.eclipse.jetty.server.session - No SessionScavenger set, using defaults
+12:15:12.755 [Thread-0] INFO  org.eclipse.jetty.server.session - node0 Scavenging every 600000ms
+12:15:12.961 [Thread-0] INFO  org.eclipse.jetty.server.AbstractConnector - Started ServerConnector@70788144{HTTP/1.1, (http/1.1)}{0.0.0.0:4567}
+12:15:12.961 [Thread-0] INFO  org.eclipse.jetty.server.Server - Started @953ms

@@ -29,8 +29,11 @@
             <input type="text" id="nombre" name="nombre" value="${reserva.nombre}"/>
         </div>
         <div>
-            <label for="turno">Turno: </label>
-            <input type="text" id="turno" name="turno" value="${reserva.turno}"/>
+            <label for="turno">Turno</label>
+            <select name="turno" id="turno">
+                <option value="COMIDA">COMIDA</option>
+                <option value="CENA">CENA</option>
+            </select>
         </div>
         <br/>
         <div>
