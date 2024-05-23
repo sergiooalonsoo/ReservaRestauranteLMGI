@@ -30,9 +30,9 @@ public class Main {
         get("/elimina-reserva/:id", ReservaController::servirEliminarReseva, freeMarker);
         post("/elimina-reserva/:id", ReservaController::eliminarReserva, freeMarker);
 //        get("/error", NotaController::servirError, freeMarker);
-//
-//        init();
-//
+
+        init();
+
     }
 //
 }

@@ -42,9 +42,13 @@
     <br/><br/>
 
     <#if eliminar>
+        <form action="${'/elimina-reserva/' + reserva.numeroTelefono}" method="POST">
+            Introduzca el Numero de Telefono con el que se realizo la reserva <input type="text" />
+        </form>
         <form action="${'/elimina-reserva/' + reserva.id}" method="POST">
             ¿Seguro que desea eliminar la reserva? <input type="submit" value="Confirmar" />
         </form>
+
     <#else>
         <div>
             <a href="${'/elimina-reserva/' + reserva.id}">Eliminar</a>

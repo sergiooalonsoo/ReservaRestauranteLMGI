@@ -32,12 +32,13 @@ public class ReservaDao {
         return null;
     }
 
-    public boolean eliminarReserva(int idReserva) {
-        String sql = "DELETE FROM reserva WHERE id = ?";
-        Object[] params = {idReserva};
+    public boolean eliminarReserva(int idReserva, int numeroTelefono) {
+        String sql = "DELETE FROM reserva WHERE id = ? and WHERE numeroTelefo = ?";
+        Object[] params = {idReserva,numeroTelefono};
         ConnectionManager.ejecutarUpdateSQL(sql, params);
         return true;
     }
+
 
     public List<Reserva> obtenerReservas() {
         String sql = "SELECT id, nombre, turno, numComensales, fecha " +

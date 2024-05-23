@@ -87,7 +87,8 @@ public class ReservaController {
 
     public static ModelAndView eliminarReserva(Request request, Response response) {
         int idReserva = Integer.parseInt(request.params(":id"));
-        if (reservaService.eliminarReserva(idReserva)) {
+        int telefonoReserva = Integer.parseInt(request.params(":numeroTelefono"));
+        if (reservaService.eliminarReserva(idReserva,telefonoReserva)) {
             response.redirect("/lista-reservas");
         }else {
             response.redirect("/error");
@@ -95,5 +96,7 @@ public class ReservaController {
         return null;
 
     }
+
+
 }
 

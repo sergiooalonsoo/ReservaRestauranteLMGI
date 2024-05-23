@@ -12,8 +12,8 @@ public class ReservaService {
             return reservaDao.obtenerReserva(idReserva);
     }
 
-    public boolean eliminarReserva(int idReserva) {
-        return reservaDao.eliminarReserva(idReserva);
+    public boolean eliminarReserva(int idReserva, int numeroTelefono) {
+        return reservaDao.eliminarReserva(idReserva,numeroTelefono);
     }
 
     public List<Reserva> obtenerReservas() {
