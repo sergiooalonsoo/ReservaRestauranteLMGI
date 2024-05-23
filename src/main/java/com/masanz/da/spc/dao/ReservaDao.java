@@ -8,7 +8,10 @@ import java.util.List;
 
 public class ReservaDao {
     public ReservaDao(){
-        ConnectionManager.conectar("reservas_db","proy","password");
+        ConnectionManager.conectar(
+                "reservas_db",
+                "proy",
+                "password");
     }
 
     public Reserva obtenerReserva(long idReserva) {
@@ -68,7 +71,12 @@ public class ReservaDao {
     public Reserva guardarReserva(Reserva reserva) {
         String sql = "INSERT INTO reserva (nombre, turno, numComensales, fecha, numeroTelefono) " +
                 "VALUES (?, ?, ?, ?, ?)";
-        Object[] params = {reserva.getNombre(), reserva.getTurno(), reserva.getNumComensales(), reserva.getFecha(), reserva.getNumeroTelefono()};
+        Object[] params = {
+                reserva.getNombre(),
+                reserva.getTurno(),
+                reserva.getNumComensales(),
+                reserva.getFecha(),
+                reserva.getNumeroTelefono()};
         int id = (int) ConnectionManager.ejecutarInsertSQL(sql, params);
         if (id > 0){
             reserva.setId(id);

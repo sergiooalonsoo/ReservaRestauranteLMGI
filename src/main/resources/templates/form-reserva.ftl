@@ -25,23 +25,25 @@
             </div>
         </#if>
         <div>
-            <label for="nombre">Nombre</label>
+            <label for="nombre">Nombre: </label>
             <input type="text" id="nombre" name="nombre" value="${reserva.nombre}"/>
         </div>
         <div>
-            <label for="turno">Turno</label>
+            <label for="turno">Turno: </label>
             <input type="text" id="turno" name="turno" value="${reserva.turno}"/>
         </div>
+        <br/>
         <div>
-            <label for="numComensales">Numero de Comensales</label>
+            <label for="numComensales">Numero de Comensales: </label>
             <input type="text" id="numComensales" name="numComensales" value="${reserva.numComensales}"/>
         </div>
         <div>
-            <label for="fecha">Fecha</label>
-            <input type="text" id="fecha" name="fecha" value="${reserva.fecha}"/>
+            <label for="fecha">Fecha: </label>
+            <input type="date" id="fecha" name="fecha" value="${reserva.fecha}"/>
         </div>
+        <br/>
         <div>
-            <label for="numeroTelefono">Numero de Telefono</label>
+            <label for="numeroTelefono">Numero de Telefono: </label>
             <input type="text" id="numeroTelefono" name="numeroTelefono" value="${reserva.numeroTelefono}"/>
         </div>
 

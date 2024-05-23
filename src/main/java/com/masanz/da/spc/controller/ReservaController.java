@@ -2,6 +2,7 @@ package com.masanz.da.spc.controller;
 
 import com.masanz.da.spc.dto.Reserva;
 import com.masanz.da.spc.service.ReservaService;
+import org.apache.logging.log4j.core.appender.rewrite.MapRewritePolicy;
 import spark.ModelAndView;
 import spark.Request;
 import spark.Response;
@@ -87,8 +88,7 @@ public class ReservaController {
 
     public static ModelAndView eliminarReserva(Request request, Response response) {
         int idReserva = Integer.parseInt(request.params(":id"));
-        int telefonoReserva = Integer.parseInt(request.params(":numeroTelefono"));
-        if (reservaService.eliminarReserva(idReserva,telefonoReserva)) {
+        if (reservaService.eliminarReserva(idReserva)) {
             response.redirect("/lista-reservas");
         }else {
             response.redirect("/error");
@@ -97,6 +97,9 @@ public class ReservaController {
 
     }
 
-
+    public static ModelAndView servirError(Request request, Response response) {
+        Map<String, Object> model = new HashMap<>();
+        return new ModelAndView(model, "error.ftl");
+    }
 }
 
