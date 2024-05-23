@@ -28,7 +28,7 @@ public class Reserva {
     }
 
     public Reserva(String nombre, String turno, int numComensales, String fecha, int numeroTelefono) {
-        this(0, "", "", 0, "", 0);
+        this(0, nombre, turno, numComensales, fecha, numeroTelefono);
     }
 
     //region getSet

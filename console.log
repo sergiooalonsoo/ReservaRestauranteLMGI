@@ -2095,3 +2095,323 @@ java.lang.NumberFormatException: Cannot parse null string
 12:51:13.337 [Thread-0] INFO  org.eclipse.jetty.server.session - node0 Scavenging every 600000ms
 12:51:13.548 [Thread-0] INFO  org.eclipse.jetty.server.AbstractConnector - Started ServerConnector@5d9320d0{HTTP/1.1, (http/1.1)}{0.0.0.0:4567}
 12:51:13.548 [Thread-0] INFO  org.eclipse.jetty.server.Server - Started @978ms
+12:52:46.625 [main] INFO  Main - ARRANCANDO APLICACION
+12:52:46.650 [main] INFO  spark.staticfiles.StaticFilesConfiguration - StaticResourceHandler configured with folder = /public
+12:52:46.755 [Thread-0] INFO  org.eclipse.jetty.util.log - Logging initialized @675ms to org.eclipse.jetty.util.log.Slf4jLog
+12:52:46.809 [Thread-0] INFO  spark.embeddedserver.jetty.EmbeddedJettyServer - == Spark has ignited ...
+12:52:46.809 [Thread-0] INFO  spark.embeddedserver.jetty.EmbeddedJettyServer - >> Listening on 0.0.0.0:4567
+12:52:46.812 [Thread-0] INFO  org.eclipse.jetty.server.Server - jetty-9.4.31.v20200723; built: 2020-07-23T17:57:36.812Z; git: 450ba27947e13e66baa8cd1ce7e85a4461cacc1d; jvm 17+35-2724
+12:52:46.838 [Thread-0] INFO  org.eclipse.jetty.server.session - DefaultSessionIdManager workerName=node0
+12:52:46.838 [Thread-0] INFO  org.eclipse.jetty.server.session - No SessionScavenger set, using defaults
+12:52:46.841 [Thread-0] INFO  org.eclipse.jetty.server.session - node0 Scavenging every 600000ms
+12:52:47.062 [Thread-0] INFO  org.eclipse.jetty.server.AbstractConnector - Started ServerConnector@5d9320d0{HTTP/1.1, (http/1.1)}{0.0.0.0:4567}
+12:52:47.062 [Thread-0] INFO  org.eclipse.jetty.server.Server - Started @984ms
+13:00:42.906 [main] INFO  Main - ARRANCANDO APLICACION
+13:00:42.930 [main] INFO  spark.staticfiles.StaticFilesConfiguration - StaticResourceHandler configured with folder = /public
+13:00:43.037 [Thread-0] INFO  org.eclipse.jetty.util.log - Logging initialized @670ms to org.eclipse.jetty.util.log.Slf4jLog
+13:00:43.092 [Thread-0] INFO  spark.embeddedserver.jetty.EmbeddedJettyServer - == Spark has ignited ...
+13:00:43.092 [Thread-0] INFO  spark.embeddedserver.jetty.EmbeddedJettyServer - >> Listening on 0.0.0.0:4567
+13:00:43.094 [Thread-0] INFO  org.eclipse.jetty.server.Server - jetty-9.4.31.v20200723; built: 2020-07-23T17:57:36.812Z; git: 450ba27947e13e66baa8cd1ce7e85a4461cacc1d; jvm 17+35-2724
+13:00:43.119 [Thread-0] INFO  org.eclipse.jetty.server.session - DefaultSessionIdManager workerName=node0
+13:00:43.119 [Thread-0] INFO  org.eclipse.jetty.server.session - No SessionScavenger set, using defaults
+13:00:43.122 [Thread-0] INFO  org.eclipse.jetty.server.session - node0 Scavenging every 660000ms
+13:00:43.338 [Thread-0] INFO  org.eclipse.jetty.server.AbstractConnector - Started ServerConnector@5d9320d0{HTTP/1.1, (http/1.1)}{0.0.0.0:4567}
+13:00:43.338 [Thread-0] INFO  org.eclipse.jetty.server.Server - Started @974ms
+13:04:11.964 [main] INFO  Main - ARRANCANDO APLICACION
+13:04:11.988 [main] INFO  spark.staticfiles.StaticFilesConfiguration - StaticResourceHandler configured with folder = /public
+13:04:12.090 [Thread-0] INFO  org.eclipse.jetty.util.log - Logging initialized @665ms to org.eclipse.jetty.util.log.Slf4jLog
+13:04:12.145 [Thread-0] INFO  spark.embeddedserver.jetty.EmbeddedJettyServer - == Spark has ignited ...
+13:04:12.146 [Thread-0] INFO  spark.embeddedserver.jetty.EmbeddedJettyServer - >> Listening on 0.0.0.0:4567
+13:04:12.148 [Thread-0] INFO  org.eclipse.jetty.server.Server - jetty-9.4.31.v20200723; built: 2020-07-23T17:57:36.812Z; git: 450ba27947e13e66baa8cd1ce7e85a4461cacc1d; jvm 17+35-2724
+13:04:12.173 [Thread-0] INFO  org.eclipse.jetty.server.session - DefaultSessionIdManager workerName=node0
+13:04:12.173 [Thread-0] INFO  org.eclipse.jetty.server.session - No SessionScavenger set, using defaults
+13:04:12.176 [Thread-0] INFO  org.eclipse.jetty.server.session - node0 Scavenging every 660000ms
+13:04:12.388 [Thread-0] INFO  org.eclipse.jetty.server.AbstractConnector - Started ServerConnector@5d9320d0{HTTP/1.1, (http/1.1)}{0.0.0.0:4567}
+13:04:12.388 [Thread-0] INFO  org.eclipse.jetty.server.Server - Started @965ms
+13:05:27.842 [main] INFO  Main - ARRANCANDO APLICACION
+13:05:27.866 [main] INFO  spark.staticfiles.StaticFilesConfiguration - StaticResourceHandler configured with folder = /public
+13:05:27.972 [Thread-0] INFO  org.eclipse.jetty.util.log - Logging initialized @665ms to org.eclipse.jetty.util.log.Slf4jLog
+13:05:28.024 [Thread-0] INFO  spark.embeddedserver.jetty.EmbeddedJettyServer - == Spark has ignited ...
+13:05:28.025 [Thread-0] INFO  spark.embeddedserver.jetty.EmbeddedJettyServer - >> Listening on 0.0.0.0:4567
+13:05:28.027 [Thread-0] INFO  org.eclipse.jetty.server.Server - jetty-9.4.31.v20200723; built: 2020-07-23T17:57:36.812Z; git: 450ba27947e13e66baa8cd1ce7e85a4461cacc1d; jvm 17+35-2724
+13:05:28.051 [Thread-0] INFO  org.eclipse.jetty.server.session - DefaultSessionIdManager workerName=node0
+13:05:28.051 [Thread-0] INFO  org.eclipse.jetty.server.session - No SessionScavenger set, using defaults
+13:05:28.053 [Thread-0] INFO  org.eclipse.jetty.server.session - node0 Scavenging every 660000ms
+13:05:28.269 [Thread-0] INFO  org.eclipse.jetty.server.AbstractConnector - Started ServerConnector@5d9320d0{HTTP/1.1, (http/1.1)}{0.0.0.0:4567}
+13:05:28.269 [Thread-0] INFO  org.eclipse.jetty.server.Server - Started @965ms
+13:06:07.903 [main] INFO  Main - ARRANCANDO APLICACION
+13:06:07.927 [main] INFO  spark.staticfiles.StaticFilesConfiguration - StaticResourceHandler configured with folder = /public
+13:06:08.035 [Thread-0] INFO  org.eclipse.jetty.util.log - Logging initialized @668ms to org.eclipse.jetty.util.log.Slf4jLog
+13:06:08.089 [Thread-0] INFO  spark.embeddedserver.jetty.EmbeddedJettyServer - == Spark has ignited ...
+13:06:08.089 [Thread-0] INFO  spark.embeddedserver.jetty.EmbeddedJettyServer - >> Listening on 0.0.0.0:4567
+13:06:08.092 [Thread-0] INFO  org.eclipse.jetty.server.Server - jetty-9.4.31.v20200723; built: 2020-07-23T17:57:36.812Z; git: 450ba27947e13e66baa8cd1ce7e85a4461cacc1d; jvm 17+35-2724
+13:06:08.118 [Thread-0] INFO  org.eclipse.jetty.server.session - DefaultSessionIdManager workerName=node0
+13:06:08.118 [Thread-0] INFO  org.eclipse.jetty.server.session - No SessionScavenger set, using defaults
+13:06:08.121 [Thread-0] INFO  org.eclipse.jetty.server.session - node0 Scavenging every 600000ms
+13:06:08.338 [Thread-0] INFO  org.eclipse.jetty.server.AbstractConnector - Started ServerConnector@5d9320d0{HTTP/1.1, (http/1.1)}{0.0.0.0:4567}
+13:06:08.339 [Thread-0] INFO  org.eclipse.jetty.server.Server - Started @974ms
+13:06:57.284 [main] INFO  Main - ARRANCANDO APLICACION
+13:06:57.309 [main] INFO  spark.staticfiles.StaticFilesConfiguration - StaticResourceHandler configured with folder = /public
+13:06:57.416 [Thread-0] INFO  org.eclipse.jetty.util.log - Logging initialized @666ms to org.eclipse.jetty.util.log.Slf4jLog
+13:06:57.470 [Thread-0] INFO  spark.embeddedserver.jetty.EmbeddedJettyServer - == Spark has ignited ...
+13:06:57.470 [Thread-0] INFO  spark.embeddedserver.jetty.EmbeddedJettyServer - >> Listening on 0.0.0.0:4567
+13:06:57.473 [Thread-0] INFO  org.eclipse.jetty.server.Server - jetty-9.4.31.v20200723; built: 2020-07-23T17:57:36.812Z; git: 450ba27947e13e66baa8cd1ce7e85a4461cacc1d; jvm 17+35-2724
+13:06:57.498 [Thread-0] INFO  org.eclipse.jetty.server.session - DefaultSessionIdManager workerName=node0
+13:06:57.498 [Thread-0] INFO  org.eclipse.jetty.server.session - No SessionScavenger set, using defaults
+13:06:57.501 [Thread-0] INFO  org.eclipse.jetty.server.session - node0 Scavenging every 600000ms
+13:06:57.719 [Thread-0] INFO  org.eclipse.jetty.server.AbstractConnector - Started ServerConnector@6463d2b0{HTTP/1.1, (http/1.1)}{0.0.0.0:4567}
+13:06:57.720 [Thread-0] INFO  org.eclipse.jetty.server.Server - Started @972ms
+13:07:42.177 [main] INFO  Main - ARRANCANDO APLICACION
+13:07:42.202 [main] INFO  spark.staticfiles.StaticFilesConfiguration - StaticResourceHandler configured with folder = /public
+13:07:42.308 [Thread-0] INFO  org.eclipse.jetty.util.log - Logging initialized @680ms to org.eclipse.jetty.util.log.Slf4jLog
+13:07:42.364 [Thread-0] INFO  spark.embeddedserver.jetty.EmbeddedJettyServer - == Spark has ignited ...
+13:07:42.365 [Thread-0] INFO  spark.embeddedserver.jetty.EmbeddedJettyServer - >> Listening on 0.0.0.0:4567
+13:07:42.368 [Thread-0] INFO  org.eclipse.jetty.server.Server - jetty-9.4.31.v20200723; built: 2020-07-23T17:57:36.812Z; git: 450ba27947e13e66baa8cd1ce7e85a4461cacc1d; jvm 17+35-2724
+13:07:42.394 [Thread-0] INFO  org.eclipse.jetty.server.session - DefaultSessionIdManager workerName=node0
+13:07:42.394 [Thread-0] INFO  org.eclipse.jetty.server.session - No SessionScavenger set, using defaults
+13:07:42.397 [Thread-0] INFO  org.eclipse.jetty.server.session - node0 Scavenging every 600000ms
+13:07:42.610 [Thread-0] INFO  org.eclipse.jetty.server.AbstractConnector - Started ServerConnector@6463d2b0{HTTP/1.1, (http/1.1)}{0.0.0.0:4567}
+13:07:42.610 [Thread-0] INFO  org.eclipse.jetty.server.Server - Started @984ms
+13:08:41.821 [main] INFO  Main - ARRANCANDO APLICACION
+13:08:41.846 [main] INFO  spark.staticfiles.StaticFilesConfiguration - StaticResourceHandler configured with folder = /public
+13:08:41.951 [Thread-0] INFO  org.eclipse.jetty.util.log - Logging initialized @693ms to org.eclipse.jetty.util.log.Slf4jLog
+13:08:42.005 [Thread-0] INFO  spark.embeddedserver.jetty.EmbeddedJettyServer - == Spark has ignited ...
+13:08:42.005 [Thread-0] INFO  spark.embeddedserver.jetty.EmbeddedJettyServer - >> Listening on 0.0.0.0:4567
+13:08:42.008 [Thread-0] INFO  org.eclipse.jetty.server.Server - jetty-9.4.31.v20200723; built: 2020-07-23T17:57:36.812Z; git: 450ba27947e13e66baa8cd1ce7e85a4461cacc1d; jvm 17+35-2724
+13:08:42.034 [Thread-0] INFO  org.eclipse.jetty.server.session - DefaultSessionIdManager workerName=node0
+13:08:42.034 [Thread-0] INFO  org.eclipse.jetty.server.session - No SessionScavenger set, using defaults
+13:08:42.036 [Thread-0] INFO  org.eclipse.jetty.server.session - node0 Scavenging every 600000ms
+13:08:42.273 [Thread-0] INFO  org.eclipse.jetty.server.AbstractConnector - Started ServerConnector@5d9320d0{HTTP/1.1, (http/1.1)}{0.0.0.0:4567}
+13:08:42.274 [Thread-0] INFO  org.eclipse.jetty.server.Server - Started @1018ms
+13:08:59.713 [main] INFO  Main - ARRANCANDO APLICACION
+13:08:59.737 [main] INFO  spark.staticfiles.StaticFilesConfiguration - StaticResourceHandler configured with folder = /public
+13:08:59.842 [Thread-0] INFO  org.eclipse.jetty.util.log - Logging initialized @659ms to org.eclipse.jetty.util.log.Slf4jLog
+13:08:59.895 [Thread-0] INFO  spark.embeddedserver.jetty.EmbeddedJettyServer - == Spark has ignited ...
+13:08:59.895 [Thread-0] INFO  spark.embeddedserver.jetty.EmbeddedJettyServer - >> Listening on 0.0.0.0:4567
+13:08:59.898 [Thread-0] INFO  org.eclipse.jetty.server.Server - jetty-9.4.31.v20200723; built: 2020-07-23T17:57:36.812Z; git: 450ba27947e13e66baa8cd1ce7e85a4461cacc1d; jvm 17+35-2724
+13:08:59.923 [Thread-0] INFO  org.eclipse.jetty.server.session - DefaultSessionIdManager workerName=node0
+13:08:59.923 [Thread-0] INFO  org.eclipse.jetty.server.session - No SessionScavenger set, using defaults
+13:08:59.926 [Thread-0] INFO  org.eclipse.jetty.server.session - node0 Scavenging every 660000ms
+13:09:00.142 [Thread-0] INFO  org.eclipse.jetty.server.AbstractConnector - Started ServerConnector@5d9320d0{HTTP/1.1, (http/1.1)}{0.0.0.0:4567}
+13:09:00.142 [Thread-0] INFO  org.eclipse.jetty.server.Server - Started @961ms
+13:10:27.458 [main] INFO  Main - ARRANCANDO APLICACION
+13:10:27.486 [main] INFO  spark.staticfiles.StaticFilesConfiguration - StaticResourceHandler configured with folder = /public
+13:10:27.598 [Thread-0] INFO  org.eclipse.jetty.util.log - Logging initialized @679ms to org.eclipse.jetty.util.log.Slf4jLog
+13:10:27.649 [Thread-0] INFO  spark.embeddedserver.jetty.EmbeddedJettyServer - == Spark has ignited ...
+13:10:27.649 [Thread-0] INFO  spark.embeddedserver.jetty.EmbeddedJettyServer - >> Listening on 0.0.0.0:4567
+13:10:27.652 [Thread-0] INFO  org.eclipse.jetty.server.Server - jetty-9.4.31.v20200723; built: 2020-07-23T17:57:36.812Z; git: 450ba27947e13e66baa8cd1ce7e85a4461cacc1d; jvm 17+35-2724
+13:10:27.676 [Thread-0] INFO  org.eclipse.jetty.server.session - DefaultSessionIdManager workerName=node0
+13:10:27.677 [Thread-0] INFO  org.eclipse.jetty.server.session - No SessionScavenger set, using defaults
+13:10:27.679 [Thread-0] INFO  org.eclipse.jetty.server.session - node0 Scavenging every 600000ms
+13:10:27.912 [Thread-0] INFO  org.eclipse.jetty.server.AbstractConnector - Started ServerConnector@6463d2b0{HTTP/1.1, (http/1.1)}{0.0.0.0:4567}
+13:10:27.913 [Thread-0] INFO  org.eclipse.jetty.server.Server - Started @996ms
+13:11:09.541 [main] INFO  Main - ARRANCANDO APLICACION
+13:11:09.565 [main] INFO  spark.staticfiles.StaticFilesConfiguration - StaticResourceHandler configured with folder = /public
+13:11:09.668 [Thread-0] INFO  org.eclipse.jetty.util.log - Logging initialized @664ms to org.eclipse.jetty.util.log.Slf4jLog
+13:11:09.722 [Thread-0] INFO  spark.embeddedserver.jetty.EmbeddedJettyServer - == Spark has ignited ...
+13:11:09.722 [Thread-0] INFO  spark.embeddedserver.jetty.EmbeddedJettyServer - >> Listening on 0.0.0.0:4567
+13:11:09.725 [Thread-0] INFO  org.eclipse.jetty.server.Server - jetty-9.4.31.v20200723; built: 2020-07-23T17:57:36.812Z; git: 450ba27947e13e66baa8cd1ce7e85a4461cacc1d; jvm 17+35-2724
+13:11:09.750 [Thread-0] INFO  org.eclipse.jetty.server.session - DefaultSessionIdManager workerName=node0
+13:11:09.750 [Thread-0] INFO  org.eclipse.jetty.server.session - No SessionScavenger set, using defaults
+13:11:09.753 [Thread-0] INFO  org.eclipse.jetty.server.session - node0 Scavenging every 600000ms
+13:11:09.963 [Thread-0] INFO  org.eclipse.jetty.server.AbstractConnector - Started ServerConnector@5d9320d0{HTTP/1.1, (http/1.1)}{0.0.0.0:4567}
+13:11:09.963 [Thread-0] INFO  org.eclipse.jetty.server.Server - Started @962ms
+13:12:19.730 [main] INFO  Main - ARRANCANDO APLICACION
+13:12:19.755 [main] INFO  spark.staticfiles.StaticFilesConfiguration - StaticResourceHandler configured with folder = /public
+13:12:19.863 [Thread-0] INFO  org.eclipse.jetty.util.log - Logging initialized @682ms to org.eclipse.jetty.util.log.Slf4jLog
+13:12:19.922 [Thread-0] INFO  spark.embeddedserver.jetty.EmbeddedJettyServer - == Spark has ignited ...
+13:12:19.922 [Thread-0] INFO  spark.embeddedserver.jetty.EmbeddedJettyServer - >> Listening on 0.0.0.0:4567
+13:12:19.925 [Thread-0] INFO  org.eclipse.jetty.server.Server - jetty-9.4.31.v20200723; built: 2020-07-23T17:57:36.812Z; git: 450ba27947e13e66baa8cd1ce7e85a4461cacc1d; jvm 17+35-2724
+13:12:19.950 [Thread-0] INFO  org.eclipse.jetty.server.session - DefaultSessionIdManager workerName=node0
+13:12:19.950 [Thread-0] INFO  org.eclipse.jetty.server.session - No SessionScavenger set, using defaults
+13:12:19.953 [Thread-0] INFO  org.eclipse.jetty.server.session - node0 Scavenging every 600000ms
+13:12:20.168 [Thread-0] INFO  org.eclipse.jetty.server.AbstractConnector - Started ServerConnector@5d9320d0{HTTP/1.1, (http/1.1)}{0.0.0.0:4567}
+13:12:20.168 [Thread-0] INFO  org.eclipse.jetty.server.Server - Started @989ms
+13:14:32.411 [main] INFO  Main - ARRANCANDO APLICACION
+13:14:32.436 [main] INFO  spark.staticfiles.StaticFilesConfiguration - StaticResourceHandler configured with folder = /public
+13:14:32.544 [Thread-0] INFO  org.eclipse.jetty.util.log - Logging initialized @670ms to org.eclipse.jetty.util.log.Slf4jLog
+13:14:32.596 [Thread-0] INFO  spark.embeddedserver.jetty.EmbeddedJettyServer - == Spark has ignited ...
+13:14:32.596 [Thread-0] INFO  spark.embeddedserver.jetty.EmbeddedJettyServer - >> Listening on 0.0.0.0:4567
+13:14:32.599 [Thread-0] INFO  org.eclipse.jetty.server.Server - jetty-9.4.31.v20200723; built: 2020-07-23T17:57:36.812Z; git: 450ba27947e13e66baa8cd1ce7e85a4461cacc1d; jvm 17+35-2724
+13:14:32.622 [Thread-0] INFO  org.eclipse.jetty.server.session - DefaultSessionIdManager workerName=node0
+13:14:32.622 [Thread-0] INFO  org.eclipse.jetty.server.session - No SessionScavenger set, using defaults
+13:14:32.624 [Thread-0] INFO  org.eclipse.jetty.server.session - node0 Scavenging every 600000ms
+13:14:32.835 [Thread-0] INFO  org.eclipse.jetty.server.AbstractConnector - Started ServerConnector@6463d2b0{HTTP/1.1, (http/1.1)}{0.0.0.0:4567}
+13:14:32.835 [Thread-0] INFO  org.eclipse.jetty.server.Server - Started @963ms
+13:15:07.985 [main] INFO  Main - ARRANCANDO APLICACION
+13:15:08.009 [main] INFO  spark.staticfiles.StaticFilesConfiguration - StaticResourceHandler configured with folder = /public
+13:15:08.115 [Thread-0] INFO  org.eclipse.jetty.util.log - Logging initialized @682ms to org.eclipse.jetty.util.log.Slf4jLog
+13:15:08.169 [Thread-0] INFO  spark.embeddedserver.jetty.EmbeddedJettyServer - == Spark has ignited ...
+13:15:08.169 [Thread-0] INFO  spark.embeddedserver.jetty.EmbeddedJettyServer - >> Listening on 0.0.0.0:4567
+13:15:08.172 [Thread-0] INFO  org.eclipse.jetty.server.Server - jetty-9.4.31.v20200723; built: 2020-07-23T17:57:36.812Z; git: 450ba27947e13e66baa8cd1ce7e85a4461cacc1d; jvm 17+35-2724
+13:15:08.197 [Thread-0] INFO  org.eclipse.jetty.server.session - DefaultSessionIdManager workerName=node0
+13:15:08.197 [Thread-0] INFO  org.eclipse.jetty.server.session - No SessionScavenger set, using defaults
+13:15:08.200 [Thread-0] INFO  org.eclipse.jetty.server.session - node0 Scavenging every 660000ms
+13:15:08.417 [Thread-0] INFO  org.eclipse.jetty.server.AbstractConnector - Started ServerConnector@5d9320d0{HTTP/1.1, (http/1.1)}{0.0.0.0:4567}
+13:15:08.417 [Thread-0] INFO  org.eclipse.jetty.server.Server - Started @986ms
+13:15:43.976 [main] INFO  Main - ARRANCANDO APLICACION
+13:15:44.002 [main] INFO  spark.staticfiles.StaticFilesConfiguration - StaticResourceHandler configured with folder = /public
+13:15:44.105 [Thread-0] INFO  org.eclipse.jetty.util.log - Logging initialized @672ms to org.eclipse.jetty.util.log.Slf4jLog
+13:15:44.157 [Thread-0] INFO  spark.embeddedserver.jetty.EmbeddedJettyServer - == Spark has ignited ...
+13:15:44.158 [Thread-0] INFO  spark.embeddedserver.jetty.EmbeddedJettyServer - >> Listening on 0.0.0.0:4567
+13:15:44.160 [Thread-0] INFO  org.eclipse.jetty.server.Server - jetty-9.4.31.v20200723; built: 2020-07-23T17:57:36.812Z; git: 450ba27947e13e66baa8cd1ce7e85a4461cacc1d; jvm 17+35-2724
+13:15:44.184 [Thread-0] INFO  org.eclipse.jetty.server.session - DefaultSessionIdManager workerName=node0
+13:15:44.185 [Thread-0] INFO  org.eclipse.jetty.server.session - No SessionScavenger set, using defaults
+13:15:44.187 [Thread-0] INFO  org.eclipse.jetty.server.session - node0 Scavenging every 600000ms
+13:15:44.403 [Thread-0] INFO  org.eclipse.jetty.server.AbstractConnector - Started ServerConnector@5d9320d0{HTTP/1.1, (http/1.1)}{0.0.0.0:4567}
+13:15:44.403 [Thread-0] INFO  org.eclipse.jetty.server.Server - Started @972ms
+13:16:59.719 [main] INFO  Main - ARRANCANDO APLICACION
+13:16:59.745 [main] INFO  spark.staticfiles.StaticFilesConfiguration - StaticResourceHandler configured with folder = /public
+13:16:59.854 [Thread-0] INFO  org.eclipse.jetty.util.log - Logging initialized @676ms to org.eclipse.jetty.util.log.Slf4jLog
+13:16:59.910 [Thread-0] INFO  spark.embeddedserver.jetty.EmbeddedJettyServer - == Spark has ignited ...
+13:16:59.911 [Thread-0] INFO  spark.embeddedserver.jetty.EmbeddedJettyServer - >> Listening on 0.0.0.0:4567
+13:16:59.913 [Thread-0] INFO  org.eclipse.jetty.server.Server - jetty-9.4.31.v20200723; built: 2020-07-23T17:57:36.812Z; git: 450ba27947e13e66baa8cd1ce7e85a4461cacc1d; jvm 17+35-2724
+13:16:59.939 [Thread-0] INFO  org.eclipse.jetty.server.session - DefaultSessionIdManager workerName=node0
+13:16:59.939 [Thread-0] INFO  org.eclipse.jetty.server.session - No SessionScavenger set, using defaults
+13:16:59.942 [Thread-0] INFO  org.eclipse.jetty.server.session - node0 Scavenging every 660000ms
+13:17:00.158 [Thread-0] INFO  org.eclipse.jetty.server.AbstractConnector - Started ServerConnector@5d9320d0{HTTP/1.1, (http/1.1)}{0.0.0.0:4567}
+13:17:00.158 [Thread-0] INFO  org.eclipse.jetty.server.Server - Started @982ms
+13:23:06.177 [main] INFO  Main - ARRANCANDO APLICACION
+13:23:06.202 [main] INFO  spark.staticfiles.StaticFilesConfiguration - StaticResourceHandler configured with folder = /public
+13:23:06.322 [Thread-0] INFO  org.eclipse.jetty.util.log - Logging initialized @695ms to org.eclipse.jetty.util.log.Slf4jLog
+13:23:06.374 [Thread-0] INFO  spark.embeddedserver.jetty.EmbeddedJettyServer - == Spark has ignited ...
+13:23:06.374 [Thread-0] INFO  spark.embeddedserver.jetty.EmbeddedJettyServer - >> Listening on 0.0.0.0:4567
+13:23:06.377 [Thread-0] INFO  org.eclipse.jetty.server.Server - jetty-9.4.31.v20200723; built: 2020-07-23T17:57:36.812Z; git: 450ba27947e13e66baa8cd1ce7e85a4461cacc1d; jvm 17+35-2724
+13:23:06.401 [Thread-0] INFO  org.eclipse.jetty.server.session - DefaultSessionIdManager workerName=node0
+13:23:06.402 [Thread-0] INFO  org.eclipse.jetty.server.session - No SessionScavenger set, using defaults
+13:23:06.404 [Thread-0] INFO  org.eclipse.jetty.server.session - node0 Scavenging every 660000ms
+13:23:06.614 [Thread-0] INFO  org.eclipse.jetty.server.AbstractConnector - Started ServerConnector@5d9320d0{HTTP/1.1, (http/1.1)}{0.0.0.0:4567}
+13:23:06.614 [Thread-0] INFO  org.eclipse.jetty.server.Server - Started @990ms
+13:25:47.058 [main] INFO  Main - ARRANCANDO APLICACION
+13:25:47.083 [main] INFO  spark.staticfiles.StaticFilesConfiguration - StaticResourceHandler configured with folder = /public
+13:25:47.190 [Thread-0] INFO  org.eclipse.jetty.util.log - Logging initialized @662ms to org.eclipse.jetty.util.log.Slf4jLog
+13:25:47.244 [Thread-0] INFO  spark.embeddedserver.jetty.EmbeddedJettyServer - == Spark has ignited ...
+13:25:47.245 [Thread-0] INFO  spark.embeddedserver.jetty.EmbeddedJettyServer - >> Listening on 0.0.0.0:4567
+13:25:47.248 [Thread-0] INFO  org.eclipse.jetty.server.Server - jetty-9.4.31.v20200723; built: 2020-07-23T17:57:36.812Z; git: 450ba27947e13e66baa8cd1ce7e85a4461cacc1d; jvm 17+35-2724
+13:25:47.271 [Thread-0] INFO  org.eclipse.jetty.server.session - DefaultSessionIdManager workerName=node0
+13:25:47.271 [Thread-0] INFO  org.eclipse.jetty.server.session - No SessionScavenger set, using defaults
+13:25:47.273 [Thread-0] INFO  org.eclipse.jetty.server.session - node0 Scavenging every 600000ms
+13:25:47.488 [Thread-0] INFO  org.eclipse.jetty.server.AbstractConnector - Started ServerConnector@5d9320d0{HTTP/1.1, (http/1.1)}{0.0.0.0:4567}
+13:25:47.488 [Thread-0] INFO  org.eclipse.jetty.server.Server - Started @963ms
+13:26:34.432 [main] INFO  Main - ARRANCANDO APLICACION
+13:26:34.459 [main] INFO  spark.staticfiles.StaticFilesConfiguration - StaticResourceHandler configured with folder = /public
+13:26:34.574 [Thread-0] INFO  org.eclipse.jetty.util.log - Logging initialized @684ms to org.eclipse.jetty.util.log.Slf4jLog
+13:26:34.632 [Thread-0] INFO  spark.embeddedserver.jetty.EmbeddedJettyServer - == Spark has ignited ...
+13:26:34.632 [Thread-0] INFO  spark.embeddedserver.jetty.EmbeddedJettyServer - >> Listening on 0.0.0.0:4567
+13:26:34.635 [Thread-0] INFO  org.eclipse.jetty.server.Server - jetty-9.4.31.v20200723; built: 2020-07-23T17:57:36.812Z; git: 450ba27947e13e66baa8cd1ce7e85a4461cacc1d; jvm 17+35-2724
+13:26:34.662 [Thread-0] INFO  org.eclipse.jetty.server.session - DefaultSessionIdManager workerName=node0
+13:26:34.662 [Thread-0] INFO  org.eclipse.jetty.server.session - No SessionScavenger set, using defaults
+13:26:34.664 [Thread-0] INFO  org.eclipse.jetty.server.session - node0 Scavenging every 600000ms
+13:26:34.876 [Thread-0] INFO  org.eclipse.jetty.server.AbstractConnector - Started ServerConnector@5d9320d0{HTTP/1.1, (http/1.1)}{0.0.0.0:4567}
+13:26:34.876 [Thread-0] INFO  org.eclipse.jetty.server.Server - Started @989ms
+13:27:17.183 [main] INFO  Main - ARRANCANDO APLICACION
+13:27:17.207 [main] INFO  spark.staticfiles.StaticFilesConfiguration - StaticResourceHandler configured with folder = /public
+13:27:17.311 [Thread-0] INFO  org.eclipse.jetty.util.log - Logging initialized @674ms to org.eclipse.jetty.util.log.Slf4jLog
+13:27:17.364 [Thread-0] INFO  spark.embeddedserver.jetty.EmbeddedJettyServer - == Spark has ignited ...
+13:27:17.364 [Thread-0] INFO  spark.embeddedserver.jetty.EmbeddedJettyServer - >> Listening on 0.0.0.0:4567
+13:27:17.367 [Thread-0] INFO  org.eclipse.jetty.server.Server - jetty-9.4.31.v20200723; built: 2020-07-23T17:57:36.812Z; git: 450ba27947e13e66baa8cd1ce7e85a4461cacc1d; jvm 17+35-2724
+13:27:17.391 [Thread-0] INFO  org.eclipse.jetty.server.session - DefaultSessionIdManager workerName=node0
+13:27:17.391 [Thread-0] INFO  org.eclipse.jetty.server.session - No SessionScavenger set, using defaults
+13:27:17.394 [Thread-0] INFO  org.eclipse.jetty.server.session - node0 Scavenging every 660000ms
+13:27:17.606 [Thread-0] INFO  org.eclipse.jetty.server.AbstractConnector - Started ServerConnector@5d9320d0{HTTP/1.1, (http/1.1)}{0.0.0.0:4567}
+13:27:17.606 [Thread-0] INFO  org.eclipse.jetty.server.Server - Started @971ms
+13:27:46.611 [main] INFO  Main - ARRANCANDO APLICACION
+13:27:46.636 [main] INFO  spark.staticfiles.StaticFilesConfiguration - StaticResourceHandler configured with folder = /public
+13:27:46.738 [Thread-0] INFO  org.eclipse.jetty.util.log - Logging initialized @674ms to org.eclipse.jetty.util.log.Slf4jLog
+13:27:46.790 [Thread-0] INFO  spark.embeddedserver.jetty.EmbeddedJettyServer - == Spark has ignited ...
+13:27:46.790 [Thread-0] INFO  spark.embeddedserver.jetty.EmbeddedJettyServer - >> Listening on 0.0.0.0:4567
+13:27:46.793 [Thread-0] INFO  org.eclipse.jetty.server.Server - jetty-9.4.31.v20200723; built: 2020-07-23T17:57:36.812Z; git: 450ba27947e13e66baa8cd1ce7e85a4461cacc1d; jvm 17+35-2724
+13:27:46.816 [Thread-0] INFO  org.eclipse.jetty.server.session - DefaultSessionIdManager workerName=node0
+13:27:46.817 [Thread-0] INFO  org.eclipse.jetty.server.session - No SessionScavenger set, using defaults
+13:27:46.820 [Thread-0] INFO  org.eclipse.jetty.server.session - node0 Scavenging every 600000ms
+13:27:47.035 [Thread-0] INFO  org.eclipse.jetty.server.AbstractConnector - Started ServerConnector@5d9320d0{HTTP/1.1, (http/1.1)}{0.0.0.0:4567}
+13:27:47.035 [Thread-0] INFO  org.eclipse.jetty.server.Server - Started @973ms
+13:32:20.281 [main] INFO  Main - ARRANCANDO APLICACION
+13:32:20.307 [main] INFO  spark.staticfiles.StaticFilesConfiguration - StaticResourceHandler configured with folder = /public
+13:32:20.417 [Thread-0] INFO  org.eclipse.jetty.util.log - Logging initialized @685ms to org.eclipse.jetty.util.log.Slf4jLog
+13:32:20.474 [Thread-0] INFO  spark.embeddedserver.jetty.EmbeddedJettyServer - == Spark has ignited ...
+13:32:20.474 [Thread-0] INFO  spark.embeddedserver.jetty.EmbeddedJettyServer - >> Listening on 0.0.0.0:4567
+13:32:20.477 [Thread-0] INFO  org.eclipse.jetty.server.Server - jetty-9.4.31.v20200723; built: 2020-07-23T17:57:36.812Z; git: 450ba27947e13e66baa8cd1ce7e85a4461cacc1d; jvm 17+35-2724
+13:32:20.503 [Thread-0] INFO  org.eclipse.jetty.server.session - DefaultSessionIdManager workerName=node0
+13:32:20.503 [Thread-0] INFO  org.eclipse.jetty.server.session - No SessionScavenger set, using defaults
+13:32:20.506 [Thread-0] INFO  org.eclipse.jetty.server.session - node0 Scavenging every 660000ms
+13:32:20.725 [Thread-0] INFO  org.eclipse.jetty.server.AbstractConnector - Started ServerConnector@5d9320d0{HTTP/1.1, (http/1.1)}{0.0.0.0:4567}
+13:32:20.725 [Thread-0] INFO  org.eclipse.jetty.server.Server - Started @997ms
+13:56:23.644 [main] INFO  Main - ARRANCANDO APLICACION
+13:56:23.671 [main] INFO  spark.staticfiles.StaticFilesConfiguration - StaticResourceHandler configured with folder = /public
+13:56:23.778 [Thread-0] INFO  org.eclipse.jetty.util.log - Logging initialized @673ms to org.eclipse.jetty.util.log.Slf4jLog
+13:56:23.833 [Thread-0] INFO  spark.embeddedserver.jetty.EmbeddedJettyServer - == Spark has ignited ...
+13:56:23.834 [Thread-0] INFO  spark.embeddedserver.jetty.EmbeddedJettyServer - >> Listening on 0.0.0.0:4567
+13:56:23.836 [Thread-0] INFO  org.eclipse.jetty.server.Server - jetty-9.4.31.v20200723; built: 2020-07-23T17:57:36.812Z; git: 450ba27947e13e66baa8cd1ce7e85a4461cacc1d; jvm 17+35-2724
+13:56:23.860 [Thread-0] INFO  org.eclipse.jetty.server.session - DefaultSessionIdManager workerName=node0
+13:56:23.860 [Thread-0] INFO  org.eclipse.jetty.server.session - No SessionScavenger set, using defaults
+13:56:23.863 [Thread-0] INFO  org.eclipse.jetty.server.session - node0 Scavenging every 600000ms
+13:56:24.082 [Thread-0] INFO  org.eclipse.jetty.server.AbstractConnector - Started ServerConnector@6463d2b0{HTTP/1.1, (http/1.1)}{0.0.0.0:4567}
+13:56:24.082 [Thread-0] INFO  org.eclipse.jetty.server.Server - Started @979ms
+14:07:45.173 [main] INFO  Main - ARRANCANDO APLICACION
+14:07:45.198 [main] INFO  spark.staticfiles.StaticFilesConfiguration - StaticResourceHandler configured with folder = /public
+14:07:45.317 [Thread-0] INFO  org.eclipse.jetty.util.log - Logging initialized @662ms to org.eclipse.jetty.util.log.Slf4jLog
+14:07:45.369 [Thread-0] INFO  spark.embeddedserver.jetty.EmbeddedJettyServer - == Spark has ignited ...
+14:07:45.369 [Thread-0] INFO  spark.embeddedserver.jetty.EmbeddedJettyServer - >> Listening on 0.0.0.0:4567
+14:07:45.372 [Thread-0] INFO  org.eclipse.jetty.server.Server - jetty-9.4.31.v20200723; built: 2020-07-23T17:57:36.812Z; git: 450ba27947e13e66baa8cd1ce7e85a4461cacc1d; jvm 17+35-2724
+14:07:45.396 [Thread-0] INFO  org.eclipse.jetty.server.session - DefaultSessionIdManager workerName=node0
+14:07:45.396 [Thread-0] INFO  org.eclipse.jetty.server.session - No SessionScavenger set, using defaults
+14:07:45.399 [Thread-0] INFO  org.eclipse.jetty.server.session - node0 Scavenging every 600000ms
+14:07:45.614 [Thread-0] INFO  org.eclipse.jetty.server.AbstractConnector - Started ServerConnector@5d9320d0{HTTP/1.1, (http/1.1)}{0.0.0.0:4567}
+14:07:45.614 [Thread-0] INFO  org.eclipse.jetty.server.Server - Started @962ms
+11:32:36.147 [main] INFO  Main - ARRANCANDO APLICACION
+11:32:36.175 [main] INFO  spark.staticfiles.StaticFilesConfiguration - StaticResourceHandler configured with folder = /public
+11:32:36.313 [Thread-0] INFO  org.eclipse.jetty.util.log - Logging initialized @889ms to org.eclipse.jetty.util.log.Slf4jLog
+11:32:36.386 [Thread-0] INFO  spark.embeddedserver.jetty.EmbeddedJettyServer - == Spark has ignited ...
+11:32:36.386 [Thread-0] INFO  spark.embeddedserver.jetty.EmbeddedJettyServer - >> Listening on 0.0.0.0:4567
+11:32:36.389 [Thread-0] INFO  org.eclipse.jetty.server.Server - jetty-9.4.31.v20200723; built: 2020-07-23T17:57:36.812Z; git: 450ba27947e13e66baa8cd1ce7e85a4461cacc1d; jvm 17+35-2724
+11:32:36.418 [Thread-0] INFO  org.eclipse.jetty.server.session - DefaultSessionIdManager workerName=node0
+11:32:36.418 [Thread-0] INFO  org.eclipse.jetty.server.session - No SessionScavenger set, using defaults
+11:32:36.420 [Thread-0] INFO  org.eclipse.jetty.server.session - node0 Scavenging every 660000ms
+11:32:36.630 [Thread-0] INFO  org.eclipse.jetty.server.AbstractConnector - Started ServerConnector@5d9320d0{HTTP/1.1, (http/1.1)}{0.0.0.0:4567}
+11:32:36.630 [Thread-0] INFO  org.eclipse.jetty.server.Server - Started @1208ms
+11:32:52.635 [qtp1052211859-24] INFO  spark.http.matching.MatcherFilter - The requested route [/favicon.ico] has not been mapped in Spark for Accept: [image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8]
+11:35:38.240 [main] INFO  Main - ARRANCANDO APLICACION
+11:35:38.266 [main] INFO  spark.staticfiles.StaticFilesConfiguration - StaticResourceHandler configured with folder = /public
+11:35:38.374 [Thread-0] INFO  org.eclipse.jetty.util.log - Logging initialized @675ms to org.eclipse.jetty.util.log.Slf4jLog
+11:35:38.430 [Thread-0] INFO  spark.embeddedserver.jetty.EmbeddedJettyServer - == Spark has ignited ...
+11:35:38.430 [Thread-0] INFO  spark.embeddedserver.jetty.EmbeddedJettyServer - >> Listening on 0.0.0.0:4567
+11:35:38.433 [Thread-0] INFO  org.eclipse.jetty.server.Server - jetty-9.4.31.v20200723; built: 2020-07-23T17:57:36.812Z; git: 450ba27947e13e66baa8cd1ce7e85a4461cacc1d; jvm 17+35-2724
+11:35:38.458 [Thread-0] INFO  org.eclipse.jetty.server.session - DefaultSessionIdManager workerName=node0
+11:35:38.458 [Thread-0] INFO  org.eclipse.jetty.server.session - No SessionScavenger set, using defaults
+11:35:38.460 [Thread-0] INFO  org.eclipse.jetty.server.session - node0 Scavenging every 600000ms
+11:35:38.668 [Thread-0] INFO  org.eclipse.jetty.server.AbstractConnector - Started ServerConnector@5d9320d0{HTTP/1.1, (http/1.1)}{0.0.0.0:4567}
+11:35:38.668 [Thread-0] INFO  org.eclipse.jetty.server.Server - Started @972ms
+11:37:18.607 [main] INFO  Main - ARRANCANDO APLICACION
+11:37:18.632 [main] INFO  spark.staticfiles.StaticFilesConfiguration - StaticResourceHandler configured with folder = /public
+11:37:18.740 [Thread-0] INFO  org.eclipse.jetty.util.log - Logging initialized @655ms to org.eclipse.jetty.util.log.Slf4jLog
+11:37:18.794 [Thread-0] INFO  spark.embeddedserver.jetty.EmbeddedJettyServer - == Spark has ignited ...
+11:37:18.795 [Thread-0] INFO  spark.embeddedserver.jetty.EmbeddedJettyServer - >> Listening on 0.0.0.0:4567
+11:37:18.797 [Thread-0] INFO  org.eclipse.jetty.server.Server - jetty-9.4.31.v20200723; built: 2020-07-23T17:57:36.812Z; git: 450ba27947e13e66baa8cd1ce7e85a4461cacc1d; jvm 17+35-2724
+11:37:18.821 [Thread-0] INFO  org.eclipse.jetty.server.session - DefaultSessionIdManager workerName=node0
+11:37:18.822 [Thread-0] INFO  org.eclipse.jetty.server.session - No SessionScavenger set, using defaults
+11:37:18.824 [Thread-0] INFO  org.eclipse.jetty.server.session - node0 Scavenging every 660000ms
+11:37:19.031 [Thread-0] INFO  org.eclipse.jetty.server.AbstractConnector - Started ServerConnector@5d9320d0{HTTP/1.1, (http/1.1)}{0.0.0.0:4567}
+11:37:19.032 [Thread-0] INFO  org.eclipse.jetty.server.Server - Started @948ms
+11:51:59.128 [main] INFO  Main - ARRANCANDO APLICACION
+11:51:59.154 [main] INFO  spark.staticfiles.StaticFilesConfiguration - StaticResourceHandler configured with folder = /public
+11:51:59.260 [Thread-0] INFO  org.eclipse.jetty.util.log - Logging initialized @706ms to org.eclipse.jetty.util.log.Slf4jLog
+11:51:59.313 [Thread-0] INFO  spark.embeddedserver.jetty.EmbeddedJettyServer - == Spark has ignited ...
+11:51:59.314 [Thread-0] INFO  spark.embeddedserver.jetty.EmbeddedJettyServer - >> Listening on 0.0.0.0:4567
+11:51:59.316 [Thread-0] INFO  org.eclipse.jetty.server.Server - jetty-9.4.31.v20200723; built: 2020-07-23T17:57:36.812Z; git: 450ba27947e13e66baa8cd1ce7e85a4461cacc1d; jvm 17+35-2724
+11:51:59.340 [Thread-0] INFO  org.eclipse.jetty.server.session - DefaultSessionIdManager workerName=node0
+11:51:59.340 [Thread-0] INFO  org.eclipse.jetty.server.session - No SessionScavenger set, using defaults
+11:51:59.342 [Thread-0] INFO  org.eclipse.jetty.server.session - node0 Scavenging every 600000ms
+11:51:59.553 [Thread-0] INFO  org.eclipse.jetty.server.AbstractConnector - Started ServerConnector@70788144{HTTP/1.1, (http/1.1)}{0.0.0.0:4567}
+11:51:59.554 [Thread-0] INFO  org.eclipse.jetty.server.Server - Started @1001ms
+11:57:57.323 [main] INFO  Main - ARRANCANDO APLICACION
+11:57:57.347 [main] INFO  spark.staticfiles.StaticFilesConfiguration - StaticResourceHandler configured with folder = /public
+11:57:57.452 [Thread-0] INFO  org.eclipse.jetty.util.log - Logging initialized @660ms to org.eclipse.jetty.util.log.Slf4jLog
+11:57:57.504 [Thread-0] INFO  spark.embeddedserver.jetty.EmbeddedJettyServer - == Spark has ignited ...
+11:57:57.504 [Thread-0] INFO  spark.embeddedserver.jetty.EmbeddedJettyServer - >> Listening on 0.0.0.0:4567
+11:57:57.507 [Thread-0] INFO  org.eclipse.jetty.server.Server - jetty-9.4.31.v20200723; built: 2020-07-23T17:57:36.812Z; git: 450ba27947e13e66baa8cd1ce7e85a4461cacc1d; jvm 17+35-2724
+11:57:57.530 [Thread-0] INFO  org.eclipse.jetty.server.session - DefaultSessionIdManager workerName=node0
+11:57:57.531 [Thread-0] INFO  org.eclipse.jetty.server.session - No SessionScavenger set, using defaults
+11:57:57.533 [Thread-0] INFO  org.eclipse.jetty.server.session - node0 Scavenging every 600000ms
+11:57:57.736 [Thread-0] INFO  org.eclipse.jetty.server.AbstractConnector - Started ServerConnector@70788144{HTTP/1.1, (http/1.1)}{0.0.0.0:4567}
+11:57:57.737 [Thread-0] INFO  org.eclipse.jetty.server.Server - Started @947ms

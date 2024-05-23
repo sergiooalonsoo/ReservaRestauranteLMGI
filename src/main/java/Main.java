@@ -29,9 +29,9 @@ public class Main {
         post("/crea-reserva", ReservaController::crearReserva, freeMarker);
         get("/elimina-reserva/:id", ReservaController::servirEliminarReseva, freeMarker);
         post("/elimina-reserva/:id", ReservaController::eliminarReserva, freeMarker);
-//        get("/error", NotaController::servirError, freeMarker);
+        get("/error", ReservaController::servirError, freeMarker);
 //
-//        init();
+        init();
 //
     }
 //
