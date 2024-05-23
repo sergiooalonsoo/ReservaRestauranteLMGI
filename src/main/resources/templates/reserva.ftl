@@ -48,7 +48,6 @@
             <input type="tel" name="telefono" id="telef" pattern="[0-9]{9}" required="required"/>
             ¿Seguro que desea eliminar la reserva? <input type="submit" value="Confirmar" />
         </form>
-
     <#else>
         <div>
             <a href="${'/elimina-reserva/' + reserva.id}">Eliminar</a>

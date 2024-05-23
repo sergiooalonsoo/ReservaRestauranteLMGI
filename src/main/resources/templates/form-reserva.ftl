@@ -21,34 +21,36 @@
         <#if reserva.id != 0>
             <div>
                 <label for="id">ID</label>
-                <input type="text" id="id" name="id" value="${reserva.id}" disabled="disabled"/>
+                <input type="text" id="id" name="id" value="${reserva.id}" disabled="disabled" required="required"/>
             </div>
         </#if>
         <div>
             <label for="nombre">Nombre: </label>
-            <input type="text" id="nombre" name="nombre" value="${reserva.nombre}"/>
+            <input type="text" id="nombre" name="nombre" value="${reserva.nombre}" required="required"/>
         </div>
         <div>
             <label for="turno">Turno</label>
             <select name="turno" id="turno">
-                <option value="COMIDA">COMIDA</option>
+                <option value="COMIDA" selected="selected">COMIDA</option>
                 <option value="CENA">CENA</option>
             </select>
         </div>
         <br/>
         <div>
             <label for="numComensales">Numero de Comensales: </label>
-            <input type="text" id="numComensales" name="numComensales" value="${reserva.numComensales}"/>
+            <input type="number" id="numComensales" name="numComensales" min="1"  value="${reserva.numComensales}" required="required"/>
         </div>
+        <br/>
         <div>
             <label for="fecha">Fecha: </label>
-            <input type="date" id="fecha" name="fecha" value="${reserva.fecha}"/>
+            <input type="date" id="fecha" name="fecha" value="${reserva.fecha}" required="required"/>
         </div>
         <br/>
         <div>
             <label for="numeroTelefono">Numero de Telefono: </label>
-            <input type="text" id="numeroTelefono" name="numeroTelefono" value="${reserva.numeroTelefono}"/>
+            <input type="tel" pattern="[0-9]{9}" id="numeroTelefono" name="numeroTelefono" value="${reserva.numeroTelefono}" required="required"/>
         </div>
+        <br/>
 
 
         <input type="submit" value="${texto}" />
