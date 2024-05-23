@@ -46,7 +46,7 @@
             Introduzca el Numero de Telefono con el que se realizo la reserva
             <label for="telef">Tlf:</label>
             <input type="tel" name="telefono" id="telef" pattern="[0-9]{9}" required="required"/>
-            ¿Seguro que desea eliminar la reserva? <input type="submit" value="Confirmar" />
+            <br/> ¿Seguro que desea eliminar la reserva? <input type="submit" value="Confirmar" />
         </form>
     <#else>
         <div>
