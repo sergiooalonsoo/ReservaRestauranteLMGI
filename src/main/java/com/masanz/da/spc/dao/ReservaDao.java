@@ -36,10 +36,9 @@ public class ReservaDao {
     }
 
     public boolean eliminarReserva(int idReserva, int numeroTelefono) {
-        String sql = "DELETE FROM reserva WHERE id = ? and WHERE numeroTelefo = ?";
+        String sql = "DELETE FROM reserva WHERE id = ? and numeroTelefono = ?";
         Object[] params = {idReserva,numeroTelefono};
-        ConnectionManager.ejecutarUpdateSQL(sql, params);
-        return true;
+        return ConnectionManager.ejecutarUpdateSQL(sql, params) == 1;
     }
 
 
