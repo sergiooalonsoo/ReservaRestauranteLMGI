@@ -66,7 +66,7 @@ public class ReservaController {
         reserva = reservaService.guadarReserva(reserva);
         if (reserva.getId() != 0) {
 //            response.redirect("/lista-reserva");
-            response.redirect("/reserva/" + reserva.getId());
+            response.redirect("/reserva-con/" + reserva.getId());
         }else {
             response.redirect("/error");
         }
@@ -100,6 +100,20 @@ public class ReservaController {
     public static ModelAndView servirError(Request request, Response response) {
         Map<String, Object> model = new HashMap<>();
         return new ModelAndView(model, "error.ftl");
+    }
+
+
+    public static ModelAndView servirReservaSin(Request request, Response response) {
+        Map<String, Object> model = new HashMap<>();
+
+        int idReserva = Integer.parseInt(request.params(":id"));
+        Reserva reserva = reservaService.obtenerReserva(idReserva);
+
+
+        model.put("eliminar", false);
+        model.put("reserva", reserva);
+
+        return new ModelAndView(model, "reserva-conTelefono.ftl");
     }
 }
 

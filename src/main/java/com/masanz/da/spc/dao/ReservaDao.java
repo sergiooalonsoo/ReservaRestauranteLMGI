@@ -15,7 +15,7 @@ public class ReservaDao {
     }
 
     public Reserva obtenerReserva(long idReserva) {
-        String sql = "SELECT id, nombre, turno, numComensales, fecha " +
+        String sql = "SELECT id, nombre, turno, numComensales, fecha, numeroTelefono " +
                 "FROM reserva " +
                 "WHERE id = ? ";
         Object[] params = {idReserva};
@@ -29,6 +29,7 @@ public class ReservaDao {
             reserva.setTurno((String) resultado[0][2]);
             reserva.setNumComensales((int) resultado[0][3]);
             reserva.setFecha((String) resultado[0][4]);
+            reserva.setNumeroTelefono((int) resultado[0][5]);
 
             return reserva;
         }
