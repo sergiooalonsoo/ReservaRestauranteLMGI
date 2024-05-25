@@ -2,12 +2,10 @@ package com.masanz.da.spc.controller;
 
 import com.masanz.da.spc.dto.Reserva;
 import com.masanz.da.spc.service.ReservaService;
-import org.apache.logging.log4j.core.appender.rewrite.MapRewritePolicy;
 import spark.ModelAndView;
 import spark.Request;
 import spark.Response;
 
-import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -25,7 +23,6 @@ public class ReservaController {
 
     public static ModelAndView servirLista(Request request, Response response) {
         Map<String, Object> model = new HashMap<>();
-//
 
         List<Reserva> listaReservas = reservaService.obtenerReservas();
         model.put("reservas", listaReservas);
@@ -103,7 +100,7 @@ public class ReservaController {
     }
 
 
-    public static ModelAndView servirReservaSin(Request request, Response response) {
+    public static ModelAndView servirReservaCon(Request request, Response response) {
         Map<String, Object> model = new HashMap<>();
 
         int idReserva = Integer.parseInt(request.params(":id"));

@@ -25,7 +25,7 @@ public class Main {
         get("/", ReservaController::servirIndice, freeMarker);
         get("/lista-reservas", ReservaController::servirLista, freeMarker);
         get("/reserva/:id", ReservaController::servirReserva, freeMarker);
-        get("/reserva-con/:id", ReservaController::servirReservaSin, freeMarker);
+        get("/reserva-con/:id", ReservaController::servirReservaCon, freeMarker);
         get("/crea-reserva", ReservaController::servirCrearReserva, freeMarker);
         post("/crea-reserva", ReservaController::crearReserva, freeMarker);
         get("/elimina-reserva/:id", ReservaController::servirEliminarReseva, freeMarker);
